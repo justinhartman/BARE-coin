@@ -38,7 +38,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::MUE)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::BARE)
     {
     }
 
@@ -164,14 +164,14 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, QString& sMUEPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, QString& sBAREPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
 
     double dPercentage = 100.0 - dzPercentage;
     
-    sMUEPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    sBAREPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
     
 }
 
@@ -191,7 +191,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nLockedBalance = pwalletMain->GetLockedCoins();
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
-    // MUE Balance
+    // BARE Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount phrAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
@@ -203,7 +203,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = phrAvailableBalance;
     CAmount sumTotalBalance = nTotalBalance;
 
-    // MUE labels
+    // BARE labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, phrAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -222,7 +222,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelMUEPercent->setText(sPercentage);
+    ui->labelBAREPercent->setText(sPercentage);
 
     // Only show most balances if they are non-zero for the sake of simplicity
     QSettings settings;
@@ -230,24 +230,24 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showSumAvailable = settingShowAllBalances || sumTotalBalance != availableTotalBalance;
     ui->labelBalanceTextz->setVisible(showSumAvailable);
     ui->labelBalancez->setVisible(showSumAvailable);
-    bool showMUEAvailable = settingShowAllBalances || phrAvailableBalance != nTotalBalance;
-    bool showWatchOnlyMUEAvailable = watchOnlyBalance != nTotalWatchBalance;
-    bool showMUEPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyMUEPending = watchUnconfBalance != 0;
-    bool showMUELocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyMUELocked = nWatchOnlyLockedBalance != 0;
+    bool showBAREAvailable = settingShowAllBalances || phrAvailableBalance != nTotalBalance;
+    bool showWatchOnlyBAREAvailable = watchOnlyBalance != nTotalWatchBalance;
+    bool showBAREPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyBAREPending = watchUnconfBalance != 0;
+    bool showBARELocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyBARELocked = nWatchOnlyLockedBalance != 0;
     bool showImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = watchImmatureBalance != 0;
     bool showWatchOnly = nTotalWatchBalance != 0;
-    ui->labelBalance->setVisible(showMUEAvailable || showWatchOnlyMUEAvailable);
-    ui->labelBalanceText->setVisible(showMUEAvailable || showWatchOnlyMUEAvailable);
-    ui->labelWatchAvailable->setVisible(showMUEAvailable && showWatchOnly);
-    ui->labelUnconfirmed->setVisible(showMUEPending || showWatchOnlyMUEPending);
-    ui->labelPendingText->setVisible(showMUEPending || showWatchOnlyMUEPending);
-    ui->labelWatchPending->setVisible(showMUEPending && showWatchOnly);
-    ui->labelLockedBalance->setVisible(showMUELocked || showWatchOnlyMUELocked);
-    ui->labelLockedBalanceText->setVisible(showMUELocked || showWatchOnlyMUELocked);
-    ui->labelWatchLocked->setVisible(showMUELocked && showWatchOnly);
+    ui->labelBalance->setVisible(showBAREAvailable || showWatchOnlyBAREAvailable);
+    ui->labelBalanceText->setVisible(showBAREAvailable || showWatchOnlyBAREAvailable);
+    ui->labelWatchAvailable->setVisible(showBAREAvailable && showWatchOnly);
+    ui->labelUnconfirmed->setVisible(showBAREPending || showWatchOnlyBAREPending);
+    ui->labelPendingText->setVisible(showBAREPending || showWatchOnlyBAREPending);
+    ui->labelWatchPending->setVisible(showBAREPending && showWatchOnly);
+    ui->labelLockedBalance->setVisible(showBARELocked || showWatchOnlyBARELocked);
+    ui->labelLockedBalanceText->setVisible(showBARELocked || showWatchOnlyBARELocked);
+    ui->labelWatchLocked->setVisible(showBARELocked && showWatchOnly);
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelWatchImmature->setVisible(showImmature && showWatchOnly); // show watch-only immature balance
@@ -320,7 +320,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("MUE")
+    // update the display unit, to not use the default ("BARE")
     updateDisplayUnit();
 }
 

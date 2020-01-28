@@ -126,7 +126,7 @@ public:
 };
 
 /**
- * MonetaryUnit RPC command dispatcher.
+ * BARE RPC command dispatcher.
  */
 class CRPCTable
 {

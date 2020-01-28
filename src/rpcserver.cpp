@@ -265,10 +265,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop MonetaryUnit server.");
+            "\nStop BARE server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "MonetaryUnit server stopping";
+    return "BARE server stopping";
 }
 
 
@@ -351,38 +351,38 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* MonetaryUnit features */
-        {"monetaryunit", "masternode", &masternode, true, true, false},
-        {"monetaryunit", "listmasternodes", &listmasternodes, true, true, false},
-        {"monetaryunit", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"monetaryunit", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"monetaryunit", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"monetaryunit", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"monetaryunit", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"monetaryunit", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"monetaryunit", "masternodedebug", &masternodedebug, true, true, false},
-        {"monetaryunit", "startmasternode", &startmasternode, true, true, false},
-        {"monetaryunit", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"monetaryunit", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"monetaryunit", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"monetaryunit", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"monetaryunit", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"monetaryunit", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"monetaryunit", "mnbudget", &mnbudget, true, true, false},
-        {"monetaryunit", "preparebudget", &preparebudget, true, true, false},
-        {"monetaryunit", "submitbudget", &submitbudget, true, true, false},
-        {"monetaryunit", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"monetaryunit", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"monetaryunit", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"monetaryunit", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"monetaryunit", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"monetaryunit", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"monetaryunit", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"monetaryunit", "checkbudgets", &checkbudgets, true, true, false},
-        {"monetaryunit", "mnsync", &mnsync, true, true, false},
-        {"monetaryunit", "spork", &spork, true, true, false},
-        {"monetaryunit", "getpoolinfo", &getpoolinfo, true, true, false},
-        {"monetaryunit", "makekeypair", &makekeypair, true, true, false},
+        /* BARE features */
+        {"bare", "masternode", &masternode, true, true, false},
+        {"bare", "listmasternodes", &listmasternodes, true, true, false},
+        {"bare", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"bare", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"bare", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"bare", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"bare", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"bare", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"bare", "masternodedebug", &masternodedebug, true, true, false},
+        {"bare", "startmasternode", &startmasternode, true, true, false},
+        {"bare", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"bare", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"bare", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"bare", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"bare", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"bare", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"bare", "mnbudget", &mnbudget, true, true, false},
+        {"bare", "preparebudget", &preparebudget, true, true, false},
+        {"bare", "submitbudget", &submitbudget, true, true, false},
+        {"bare", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"bare", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"bare", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"bare", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"bare", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"bare", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"bare", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"bare", "checkbudgets", &checkbudgets, true, true, false},
+        {"bare", "mnsync", &mnsync, true, true, false},
+        {"bare", "spork", &spork, true, true, false},
+        {"bare", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"bare", "makekeypair", &makekeypair, true, true, false},
 #ifdef ENABLE_WALLET
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -598,7 +598,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> monetaryunit-cli " + methodname + " " + args + "\n";
+    return "> bare-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

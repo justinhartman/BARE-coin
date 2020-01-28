@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package monetaryunitd/monetaryunit-qt
-for Debian-based Linux systems. If you compile monetaryunitd/monetaryunit-qt yourself, there are some useful files here.
+This directory contains files used to package bared/bare-qt
+for Debian-based Linux systems. If you compile bared/bare-qt yourself, there are some useful files here.
 
-## monetaryunit: URI support ##
+## bare: URI support ##
 
 
-monetaryunit-qt.desktop  (Gnome / Open Desktop)
+bare-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install monetaryunit-qt.desktop
+	sudo desktop-file-install bare-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your monetaryunitqt binary to `/usr/bin`
-and the `../../share/pixmaps/monetaryunit128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your bareqt binary to `/usr/bin`
+and the `../../share/pixmaps/bare128.png` to `/usr/share/pixmaps`
 
-monetaryunit-qt.protocol (KDE)
+bare-qt.protocol (KDE)
 

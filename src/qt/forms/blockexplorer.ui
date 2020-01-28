@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../monetaryunit.qrc"/>
+  <include location="../bare.qrc"/>
  </resources>
  <connections/>
 </ui>

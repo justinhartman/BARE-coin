@@ -111,8 +111,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 10 * 40; // MonetaryUnit: 1 day
-        nTargetSpacing = 1 * 40;  // MonetaryUnit: 40 seconds
+        nTargetTimespan = 10 * 40; // BARE: 1 day
+        nTargetSpacing = 1 * 40;  // BARE: 40 seconds
         nMaturity = 50;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 4000000000 * COIN;
@@ -176,9 +176,9 @@ public:
         }
         // Mainnet --- nonce: 1 time: 1536266133 hash: 0x0b58ed450b3819ca54ab0054c4d220ca4f887d21c9e55d2a333173adf76d987f merklehash: 0x72aeadf2484a1961e260a25d5d03ced4452e834eeed6bdc4457252f6c444914e
 
-        vSeeds.push_back(CDNSSeedData("dns1", "dns1.monetaryunit.org"));
-        vSeeds.push_back(CDNSSeedData("dns2", "dns2.monetaryunit.org"));
-        vSeeds.push_back(CDNSSeedData("dns3", "dns3.monetaryunit.org"));
+        vSeeds.push_back(CDNSSeedData("dns1", "dns1.bare.org"));
+        vSeeds.push_back(CDNSSeedData("dns2", "dns2.bare.org"));
+        vSeeds.push_back(CDNSSeedData("dns3", "dns3.bare.org"));
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 16);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 76);
@@ -235,8 +235,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // MonetaryUnit: 1 day
-        nTargetSpacing = 1 * 10;  // MonetaryUnit: 1 minute
+        nTargetTimespan = 1 * 60; // BARE: 1 day
+        nTargetSpacing = 1 * 10;  // BARE: 1 minute
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
@@ -282,17 +282,17 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("testnetdns", "testnetdns.monetaryunit.org"));
+        vSeeds.push_back(CDNSSeedData("testnetdns", "testnetdns.bare.org"));
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet monetaryunit addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet monetaryunit script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet bare addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet bare script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet monetaryunit BIP32 pubkeys start with 'DRKV'
+        // Testnet bare BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet monetaryunit BIP32 prvkeys start with 'DRKP'
+        // Testnet bare BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet monetaryunit BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet bare BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x01)(0x00)(0x00)(0x80).convert_to_container<std::vector<unsigned char> >();
 
         bech32_hrp = "tm";
@@ -339,8 +339,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // MonetaryUnit: 1 day
-        nTargetSpacing = 1 * 60;        // MonetaryUnit: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // BARE: 1 day
+        nTargetSpacing = 1 * 60;        // BARE: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1505224800;
         genesis.nBits = 0x207fffff;

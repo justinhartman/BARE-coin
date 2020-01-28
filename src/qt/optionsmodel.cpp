@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/monetaryunit-config.h"
+#include "config/bare-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -62,7 +62,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::MUE);
+        settings.setValue("nDisplayUnit", BitcoinUnits::BARE);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -78,10 +78,10 @@ void OptionsModel::Init()
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
 
 
-    if (!settings.contains("nAnonymizeMonetaryUnitAmount"))
-        settings.setValue("nAnonymizeMonetaryUnitAmount", 1000);
+    if (!settings.contains("nAnonymizeBAREAmount"))
+        settings.setValue("nAnonymizeBAREAmount", 1000);
 
-    nAnonymizeMonetaryUnitAmount = settings.value("nAnonymizeMonetaryUnitAmount").toLongLong();
+    nAnonymizeBAREAmount = settings.value("nAnonymizeBAREAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -149,8 +149,8 @@ void OptionsModel::Init()
     if (!SoftSetArg("-lang", settings.value("language").toString().toStdString()))
         addOverriddenOption("-lang");
 
-    if (settings.contains("nAnonymizeMonetaryUnitAmount"))
-        SoftSetArg("-anonymizemonetaryunitamount", settings.value("nAnonymizeMonetaryUnitAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeBAREAmount"))
+        SoftSetArg("-anonymizebareamount", settings.value("nAnonymizeBAREAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -161,7 +161,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in monetaryunit.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in bare.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -235,8 +235,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case HideZeroBalances:
             return settings.value("fHideZeroBalances");
-        case AnonymizeMonetaryUnitAmount:
-            return QVariant(nAnonymizeMonetaryUnitAmount);
+        case AnonymizeBAREAmount:
+            return QVariant(nAnonymizeBAREAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -350,10 +350,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
 
-        case AnonymizeMonetaryUnitAmount:
-            nAnonymizeMonetaryUnitAmount = value.toInt();
-            settings.setValue("nAnonymizeMonetaryUnitAmount", nAnonymizeMonetaryUnitAmount);
-            emit anonymizeMonetaryUnitAmountChanged(nAnonymizeMonetaryUnitAmount);
+        case AnonymizeBAREAmount:
+            nAnonymizeBAREAmount = value.toInt();
+            settings.setValue("nAnonymizeBAREAmount", nAnonymizeBAREAmount);
+            emit anonymizeBAREAmountChanged(nAnonymizeBAREAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

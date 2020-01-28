@@ -75,13 +75,13 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user `gitianuser` not for `root`.
 
-Clone the git repositories for monetaryunit and Gitian.
+Clone the git repositories for bare and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/monetaryunit/monetaryunit
-git clone https://github.com/monetaryunitproject/gitian.sigs.git
-git clone https://github.com/monetaryunitproject/monetaryunit-detached-sigs.git
+git clone https://github.com/bare/bare
+git clone https://github.com/bareproject/gitian.sigs.git
+git clone https://github.com/bareproject/bare-detached-sigs.git
 ```
 
 Setting up the Gitian image

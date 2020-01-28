@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MUESupply">
+    <widget class="QLabel" name="BARESupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="MUEDemand">
+    <widget class="QLabel" name="BAREDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyMUE">
+    <widget class="QPushButton" name="BuyBARE">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy MUE</string>
+      <string>Buy BARE</string>
      </property>
      <property name="icon">
-      <iconset resource="../monetaryunit.qrc">
+      <iconset resource="../bare.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>MUE</string>
+      <string>BARE</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>MUE</string>
+      <string>BARE</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputMUE">
+    <widget class="QLineEdit" name="UnitsInputBARE">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellMUEBTN">
+    <widget class="QPushButton" name="SellBAREBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell MUE</string>
+      <string>Sell BARE</string>
      </property>
      <property name="icon">
-      <iconset resource="../monetaryunit">
+      <iconset resource="../bare">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>MUE Available:</string>
+         <string>BARE Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="MUEAvailableLabel">
+       <widget class="QLabel" name="BAREAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelMUE">
+       <widget class="QLabel" name="labelBARE">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>MUE</string>
+         <string>BARE</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MUEBalanceLabel">
+    <widget class="QLabel" name="BAREBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>MUE Balance:</string>
+      <string>BARE Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MUEAvailableLabel_2">
+    <widget class="QLabel" name="BAREAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>MUE Available:</string>
+      <string>BARE Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>MUE Pending:</string>
+      <string>BARE Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MUEPendingLabel">
+    <widget class="QLabel" name="BAREPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex MUE Deposit Address:</string>
+      <string>Bittrex BARE Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate MonetaryUnit Deposit Address</string>
+      <string>Generate BARE Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../monetaryunit.qrc">
+      <iconset resource="../bare.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertMonetaryUnit">
+     <widget class="QPushButton" name="btnConvertBARE">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../monetaryunit.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../bare.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../monetaryunit.qrc">
+      <iconset resource="../bare.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../monetaryunit.qrc"/>
+  <include location="../bare.qrc"/>
  </resources>
  <connections/>
 </ui>
