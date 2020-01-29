@@ -188,9 +188,9 @@ QT_TRANSLATE_NOOP("bare-coin", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("bare-coin", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 500000 BARE."),
+"transaction that are not equal 1000 BARE."),
 QT_TRANSLATE_NOOP("bare-coin", ""
-"Unable to locate enough funds for this transaction that are not equal 500000 "
+"Unable to locate enough funds for this transaction that are not equal 1000 "
 "BARE."),
 QT_TRANSLATE_NOOP("bare-coin", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
