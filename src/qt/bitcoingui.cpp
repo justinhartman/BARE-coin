@@ -118,7 +118,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
 
     GUIUtil::restoreWindowGeometry("nWindow", QSize(850, 550), this);
 
-    QString windowTitle = tr("BARE Core") + " - ";
+    QString windowTitle = tr("BARE Coin") + " - ";
 #ifdef ENABLE_WALLET
     /* if compiled with wallet support, -disablewallet can still disable the wallet */
     enableWallet = !GetBoolArg("-disablewallet", false);
@@ -453,7 +453,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 
     showHelpMessageAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Command-line options"), this);
     showHelpMessageAction->setMenuRole(QAction::NoRole);
-    showHelpMessageAction->setStatusTip(tr("Show the BARE Core help message to get a list with possible BARE command-line options"));
+    showHelpMessageAction->setStatusTip(tr("Show the BARE Coin help message to get a list with possible BARE command-line options"));
 
     connect(proposalAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(proposalAction, SIGNAL(triggered()), this, SLOT(gotoProposalPage()));

@@ -5334,7 +5334,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
 </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     <message>
         <location filename="../barestrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>

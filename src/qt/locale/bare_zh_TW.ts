@@ -974,6 +974,6 @@
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     </context>
 </TS>

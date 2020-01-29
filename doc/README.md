@@ -3,7 +3,7 @@ BARE Core
 
 Setup
 ---------------------
-[BARE Core](http://bare.org/wallet) is the original BARE client and it builds the backbone of the network. However, it downloads and stores the entire history of BARE transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[BARE Core](http://bare.network/#wallet) is the original BARE client and it builds the backbone of the network. However, it downloads and stores the entire history of BARE transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -28,9 +28,9 @@ Drag BARE-Qt to your applications folder, and then run BARE-Qt.
 
 * See the documentation at the [BARE Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [BARE Forum](http://forum.bare.org/).
-* Join one of our Slack groups [BARE Slack Groups](https://bare.org/slack-logins/).
-* Join our Discord server [Discord Server](https://discord.gg/dTRhamf)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=5149503.0).
+* Join our Telegram group [BARE Telegram Group](https://t.me/joinchat/Ie3kQlS1G-algyWK3LUQGg).
+* Join our Discord server [Discord Server](https://discord.gg/HqHutDk)
 
 Building
 ---------------------
@@ -42,7 +42,7 @@ The following are developer notes on how to build BARE on your native platform. 
 
 Development
 ---------------------
-The BARE repo's [root README](https://github.com/bareproject/BARE/blob/master/README.md) contains relevant information on the development process and automated testing.
+The BARE repo's [root README](https://github.com/BareCrypto/BARE-coin/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,8 +56,8 @@ The BARE repo's [root README](https://github.com/bareproject/BARE/blob/master/RE
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [BARE](http://forum.bare.org/) forum.
-* Join the [BARE-Dev](https://bare-dev.slack.com/) Slack group ([Sign-Up](https://bare-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=5149503.0) forum.
+* Join the [BARE-Discord](https://discord.gg/HqHutDk).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

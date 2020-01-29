@@ -1314,7 +1314,7 @@ MultiSend: %1</translation>
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

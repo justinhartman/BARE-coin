@@ -1808,7 +1808,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     </message>
     </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     <message>
         <source>Error</source>
         <translation>Erreur</translation>

@@ -45,8 +45,8 @@ related to the DNS seed operation.
 
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active BARE
-Core development team as well as posting on the
-[BARE Forum](https://forum.bare.org).
+Core development team as well as posting an issue or contact through
+[BARE Discord](https://discord.gg/HqHutDk)
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

@@ -2376,7 +2376,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

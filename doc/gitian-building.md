@@ -22,7 +22,7 @@ Table of Contents
 
 - [Preparing the Gitian builder host](#preparing-the-gitian-builder-host)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building BARE Core](#building-bare-core)
+- [Building BARE Core](#building-bare-coin)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)

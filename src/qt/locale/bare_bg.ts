@@ -4286,7 +4286,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
         <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>

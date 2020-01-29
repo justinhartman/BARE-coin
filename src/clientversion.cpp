@@ -13,7 +13,7 @@
  * for both bared and bare-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("BARE Core");
+const std::string CLIENT_NAME("BARE Coin");
 
 /**
  * Client version number

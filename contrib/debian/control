@@ -1,8 +1,8 @@
 Source: bare
 Section: utils
 Priority: optional
-Maintainer: Mike Trisko <mike@phore.io>
-Uploaders: Mike Trisko <mike@phore.io>
+Maintainer: crypto node <crypto-node@gmx.net>
+Uploaders: crypto node <crypto-node@gmx.net>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -22,9 +22,9 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.bare.org
-Vcs-Git: git://github.com/bareproject/BARE.git
-Vcs-Browser: http://github.com/bareproject/BARE
+Homepage: http://bare.network
+Vcs-Git: git://github.com/BareCrypto/BARE-coin.git
+Vcs-Browser: http://github.com/BareCrypto/BARE-coin
 
 Package: bared
 Architecture: any

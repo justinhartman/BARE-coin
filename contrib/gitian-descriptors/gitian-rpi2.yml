@@ -1,5 +1,5 @@
 ---
-name: "bare-rpi2-2.1"
+name: "bare-rpi2-2.0"
 enable_cache: true
 suites:
 - "trusty"

@@ -24,10 +24,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/bareproject/gitian.sigs.git
-    git clone https://github.com/bareproject/bare-detached-sigs.git
+    git clone https://github.com/BareCrypto/gitian.sigs.git
+    git clone https://github.com/BareCrypto/bare-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/bareproject/bare.git
+    git clone https://github.com/BareCrypto/BARE-coin.git
 
 ### BARE maintainers/release engineers, suggestion for writing release notes
 
@@ -97,7 +97,7 @@ NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from 
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign BARE Core for Linux, Windows, and OS X:
+### Build and sign BARE Coin for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
     ./bin/gbuild --memory 3000 --commit bare=v${VERSION} ../bare/contrib/gitian-descriptors/gitian-linux.yml
@@ -190,7 +190,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [bare-detached-sigs](https://github.com/bareproject/bare-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [bare-detached-sigs](https://github.com/BareCrypto/bare-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
@@ -266,6 +266,6 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/bareproject/BARE/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/BareCrypto/BARE-coin/releases/new) with a link to the archived release notes.
 
   - Celebrate

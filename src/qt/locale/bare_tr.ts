@@ -1694,7 +1694,7 @@ Adres: %4</translation>
     </message>
     </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     <message>
         <source>Error</source>
         <translation>hata</translation>

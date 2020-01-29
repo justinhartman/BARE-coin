@@ -696,7 +696,7 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Locked BARE or Masternode collaterals. These are excluded from zBARE minting.</string>
+                          <string>Locked BARE or Masternode collaterals. These are excluded from BARE minting.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 BARE</string>

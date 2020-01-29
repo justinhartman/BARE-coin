@@ -790,7 +790,7 @@
     </message>
     </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

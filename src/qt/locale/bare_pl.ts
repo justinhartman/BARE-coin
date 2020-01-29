@@ -2034,7 +2034,7 @@ https://www.transifex.com/bare-project/bare-project-translations </translation>
     </message>
     </context>
 <context>
-    <name>bare-core</name>
+    <name>bare-coin</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>
