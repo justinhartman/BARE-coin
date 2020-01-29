@@ -2,7 +2,9 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Phore developers
+// Copyright (c) 2017-2018 The Phore developers
+// Copyright (c) 2018-2019 The Monetaryunit developers
+// Copyright (c) 2020 The Bare developers									 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -67,7 +69,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("7fbf5849b7a8602fecd2d5e4465b3d4f0bfb482b02c87388b925009d14ba7e42"));
+    boost::assign::map_list_of(0, uint256(""));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     0,
@@ -75,7 +77,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("613e35c5b607586d3f5b8b109d162eac5fca0be0b0fa282277092e8dea8af138"));
+    boost::assign::map_list_of(0, uint256(""));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     0,
@@ -95,11 +97,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x91;
-        pchMessageStart[1] = 0xc4;
-        pchMessageStart[2] = 0xfd;
-        pchMessageStart[3] = 0xea;
-        vAlertPubKey = ParseHex("");
+        pchMessageStart[0] = 0x6e;
+        pchMessageStart[1] = 0x71;
+        pchMessageStart[2] = 0x74;
+        pchMessageStart[3] = 0x59;
+        vAlertPubKey = ParseHex("04f418618de5d8efb8dc562b895e9c9af9715ec4201a99f58c4695400d5cfc9e731b79a3d06608e72a56e0882a17c3d850b11dab12dfe2c1aa125b2d8c3ae6a495");
         nDefaultPort = 32201;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nMaxReorganizationDepth = 100;
@@ -107,14 +109,14 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 10 * 60; // BARE: 1 day
+        nTargetTimespan = 24 * 60 * 60; // BARE: 1 day
         nTargetSpacing = 1 * 60;  // BARE: 60 seconds
         nMaturity = 50;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 1400000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 400;
+        nLastPOWBlock = 250;
         nModifierUpdateBlock = 1;
 
         /**
@@ -127,7 +129,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "";
+        const char* pszTimestamp = "BARE v2, The Adult Coin - Bitcoin Block 615106 - 0000000000000000000f299cc380c3d4d0acdd63c41a626f13de2127602052a0";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -137,9 +139,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1536266133;
+        genesis.nTime = 0;
         genesis.nBits = 0x207fffff;;
-        genesis.nNonce = 1;
+        genesis.nNonce = 243603;
 
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
@@ -172,15 +174,15 @@ public:
         }
         // Mainnet --- nonce: 1 time: 1536266133 hash: 0x merklehash: 0xe
 
-        vSeeds.push_back(CDNSSeedData("dns1", "dns1.bare.org"));
-        vSeeds.push_back(CDNSSeedData("dns2", "dns2.bare.org"));
-        vSeeds.push_back(CDNSSeedData("dns3", "dns3.bare.org"));
-        
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 16);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 76);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 126);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
+        vSeeds.push_back(CDNSSeedData("dns1", "v2dns1.bare.network"));
+        vSeeds.push_back(CDNSSeedData("dns2", "v2dns2.bare.network"));
+        vSeeds.push_back(CDNSSeedData("dns3", "v2dns3.bare.network"));
+        vSeeds.push_back(CDNSSeedData("dns4", "v2dns4.bare.network"));        
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 25);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 110);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md //used: 475   | 0x800001db | BARE   | [BARE Network](https://bare.network) 
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x01)(0xDB).convert_to_container<std::vector<unsigned char> >();
 
@@ -198,9 +200,9 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "";
-        strSporkKeyTemp = "";
-        strObfuscationPoolDummyAddress = "";
+        strSporkKey = "04f418618de5d8efb8dc562b895e9c9af9715ec4201a99f58c4695400d5cfc9e731b79a3d06608e72a56e0882a17c3d850b11dab12dfe2c1aa125b2d8c3ae6a495";
+        strSporkKeyTemp = "04f418618de5d8efb8dc562b895e9c9af9715ec4201a99f58c4695400d5cfc9e731b79a3d06608e72a56e0882a17c3d850b11dab12dfe2c1aa125b2d8c3ae6a495";
+        strObfuscationPoolDummyAddress = "7vFpj3AC5tHMMqksZnFRMx74uCzWAvP2XpNQroYXPyCBA2wK45w";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
     }
 
@@ -221,27 +223,27 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x47;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x65;
-        pchMessageStart[3] = 0xbd;
-        vAlertPubKey = ParseHex("");
+        pchMessageStart[0] = 0xce;
+        pchMessageStart[1] = 0xff;
+        pchMessageStart[2] = 0xca;
+        pchMessageStart[3] = 0x44;
+        vAlertPubKey = ParseHex("0449c94d061363aeb94b248ed114b91a1ce474209cddf2f5221fb6a2d57f1632e297f92c494736a9290981fe9e3949e593088e1122da42bf5cda5c0422ffadd3cf");
         nDefaultPort = 32203;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // BARE: 1 day
-        nTargetSpacing = 1 * 10;  // BARE: 1 minute
+        nTargetTimespan = 6 * 60 * 60; // BARE: 6 hours
+        nTargetSpacing = 1 * 30;  // BARE: 30 seconds
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 1000000000 * COIN;
-        nLastPOWBlock = 400;
+        nMaxMoneyOut = 1500000 * COIN;
+        nLastPOWBlock = 250;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1505224800;
-        genesis.nNonce = 1;
+        genesis.nTime = 0;
+        genesis.nNonce = 274266;
 
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
@@ -303,9 +305,9 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKeyTemp = "";
-        strSporkKey = "";
-        strObfuscationPoolDummyAddress = "";
+        strSporkKeyTemp = "046f0a92b9ace3f1df5c1d2d61f42b2a2346f3ddd15f8b0472d40b1f7ad7f0767960ab6755f94f5bb4064322095105013a76d49421ea912d290f8bf168085302d4";
+        strSporkKey = "046f0a92b9ace3f1df5c1d2d61f42b2a2346f3ddd15f8b0472d40b1f7ad7f0767960ab6755f94f5bb4064322095105013a76d49421ea912d290f8bf168085302d4";
+        strObfuscationPoolDummyAddress = "7vFpj3AC5tHMMqksZnFRMx74uCzWAvP2XpNQroYXPyCBA2wK45w";
         nBudgetFeeConfirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                      // here because we only have a 8 block finalization window on testnet
     }
@@ -327,10 +329,10 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0xa2;
-        pchMessageStart[1] = 0xcf;
-        pchMessageStart[2] = 0x7e;
-        pchMessageStart[3] = 0xad;
+        pchMessageStart[0] = 0x54;
+        pchMessageStart[1] = 0x14;
+        pchMessageStart[2] = 0x64;
+        pchMessageStart[3] = 0x95;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
@@ -338,9 +340,9 @@ public:
         nTargetTimespan = 24 * 60 * 60; // BARE: 1 day
         nTargetSpacing = 1 * 60;        // BARE: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1505224800;
+        genesis.nTime = 0;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 12347;
+        genesis.nNonce = 1;
         nMaturity = 0;
         nLastPOWBlock = 999999999; // PoS complicates Regtest because of timing issues
         nDefaultPort = 32205;
@@ -395,8 +397,8 @@ public:
         //     "PrivateKey": "",
         //     "PublicKey": ""
         // }
-        strSporkKey = "";
-        strSporkKeyTemp = "";
+        strSporkKey = "04aa49d578bee30b672f1d83c910bc70b60c481883e661ba1f0bf596b4912cbc7e903adb65b211a068205c8bc7f34f53e1a6c3f621875c61ba0f5d42ae59fcee40";
+        strSporkKeyTemp = "04aa49d578bee30b672f1d83c910bc70b60c481883e661ba1f0bf596b4912cbc7e903adb65b211a068205c8bc7f34f53e1a6c3f621875c61ba0f5d42ae59fcee40";
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
@@ -415,7 +417,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 19686;
+        nDefaultPort = 32207;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
