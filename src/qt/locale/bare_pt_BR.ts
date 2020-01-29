@@ -3490,8 +3490,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(19687 could be used only on mainnet)</source>
-        <translation>(19687 could be used only on mainnet)</translation>
+        <source>(32201 could be used only on mainnet)</source>
+        <translation>(32201 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3502,8 +3502,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 19687 for mainnet)</source>
-        <translation>(deve ser 19687 para mainnet)</translation>
+        <source>(must be 32201 for mainnet)</source>
+        <translation>(deve ser 32201 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

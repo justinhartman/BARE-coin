@@ -100,7 +100,7 @@ public:
         pchMessageStart[2] = 0xfd;
         pchMessageStart[3] = 0xea;
         vAlertPubKey = ParseHex("");
-        nDefaultPort = 19687;
+        nDefaultPort = 32201;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
@@ -226,7 +226,7 @@ public:
         pchMessageStart[2] = 0x65;
         pchMessageStart[3] = 0xbd;
         vAlertPubKey = ParseHex("");
-        nDefaultPort = 19685;
+        nDefaultPort = 32203;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -343,7 +343,7 @@ public:
         genesis.nNonce = 12347;
         nMaturity = 0;
         nLastPOWBlock = 999999999; // PoS complicates Regtest because of timing issues
-        nDefaultPort = 19685;
+        nDefaultPort = 32205;
 
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
