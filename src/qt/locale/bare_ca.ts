@@ -418,8 +418,8 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Send coins to a BARE address</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
-        <translation>&amp;Sobre BARE Core</translation>
+        <source>&amp;About BARE Coin</source>
+        <translation>&amp;Sobre BARE Coin</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,8 +458,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>Client BARE core</translation>
+        <source>BARE Coin client</source>
+        <translation>Client BARE coin</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to BARE network</source>
@@ -860,16 +860,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
-        <translation>Sobre BARE Core</translation>
+        <source>About BARE Coin</source>
+        <translation>Sobre BARE Coin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +915,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
-        <translation>Benvingut a BARE Core.</translation>
+        <source>Welcome to BARE Coin.</source>
+        <translation>Benvingut a BARE Coin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del BARE Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del BARE Coin.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +931,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1719,8 +1719,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
-        <translation>BARE Core s'està tancant...</translation>
+        <source>BARE Coin is shutting down...</source>
+        <translation>BARE Coin s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1785,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Version %1</source>

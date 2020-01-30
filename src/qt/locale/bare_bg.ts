@@ -602,7 +602,7 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Ядро</translation>
     </message>
     <message>
@@ -630,11 +630,11 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
+        <source>&amp;About BARE Coin</source>
         <translation>&amp;Относно BARE Ядрото</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>Информациза за BARE Ядрото</translation>
     </message>
     <message>
@@ -690,11 +690,11 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
         <translation>Разкрийте Помощ за BARE Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
+        <source>BARE Coin client</source>
         <translation>Клиент BARE Ядро</translation>
     </message>
     <message numerus="yes">
@@ -1188,7 +1188,7 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Ядро</translation>
     </message>
     <message>
@@ -1196,7 +1196,7 @@ Address: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
+        <source>About BARE Coin</source>
         <translation>Относно BARE Ядрото</translation>
     </message>
     <message>
@@ -1243,15 +1243,15 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
+        <source>Welcome to BARE Coin.</source>
         <translation>Добре Дошли в BARE Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
         <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде BARE Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>BARE Ядрото ще изтегли и запише копие на целия BARE блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
@@ -1263,7 +1263,7 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Ядро</translation>
     </message>
     <message>
@@ -3469,7 +3469,7 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
+        <source>BARE Coin is shutting down...</source>
         <translation>Изключване на BARE Ядрото...</translation>
     </message>
     <message>
@@ -3619,7 +3619,7 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Ядро</translation>
     </message>
     <message>
@@ -3635,8 +3635,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The BARE Core developers</source>
-        <translation>BARE Core разработчици</translation>
+        <source>The BARE Coin developers</source>
+        <translation>BARE Coin разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>

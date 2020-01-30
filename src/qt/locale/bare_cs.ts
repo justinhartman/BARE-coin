@@ -598,8 +598,8 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Send coins to a BARE address</source>
@@ -618,12 +618,12 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
-        <translation>&amp;O BARE Core</translation>
+        <source>&amp;About BARE Coin</source>
+        <translation>&amp;O BARE Coin</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
-        <translation>Zobraz informace o BARE Core</translation>
+        <source>Show information about BARE Coin</source>
+        <translation>Zobraz informace o BARE Coin</translation>
     </message>
     <message>
         <source>Modify configuration options for BARE</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
-        <translation>Zobrazit BARE Core pomocnou zpráv pro získání seznamu možných parametrů BARE pro příkazy do příkazové řádky</translation>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
+        <translation>Zobrazit BARE Coin pomocnou zpráv pro získání seznamu možných parametrů BARE pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>BARE Core klient</translation>
+        <source>BARE Coin client</source>
+        <translation>BARE Coin klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1112,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
-        <translation>O BARE Core</translation>
+        <source>About BARE Coin</source>
+        <translation>O BARE Coin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
-        <translation>Vítejte v BARE Core.</translation>
+        <source>Welcome to BARE Coin.</source>
+        <translation>Vítejte v BARE Coin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude BARE Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude BARE Coin ukládat svá data.</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>BARE Core stáhne a uloží kopii BARE blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BARE Coin stáhne a uloží kopii BARE blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2265,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     </context>
 <context>

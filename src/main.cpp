@@ -4918,9 +4918,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
         // broken releases with wrong blockchain data
-        if (pfrom->cleanSubVer == "/BARE Core:1.1.0/" ||
-            pfrom->cleanSubVer == "/BARE Core:1.3.0/" ||
-            pfrom->cleanSubVer == "/BARE Core:1.3.1/") {
+        if (pfrom->cleanSubVer == "/BARE Coin:1.1.0/" ||
+            pfrom->cleanSubVer == "/BARE Coin:1.3.0/" ||
+            pfrom->cleanSubVer == "/BARE Coin:1.3.1/") {
             LOCK(cs_main);
             Misbehaving(pfrom->GetId(), 100); // instantly ban them because they have bad block data
             return false;

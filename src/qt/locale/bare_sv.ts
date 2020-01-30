@@ -583,7 +583,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Kärna</translation>
     </message>
     <message>
@@ -603,11 +603,11 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
+        <source>&amp;About BARE Coin</source>
         <translation>Om BARE Kärnan</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>Visa information om BARE Kärnan</translation>
     </message>
     <message>
@@ -631,7 +631,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
+        <source>BARE Coin client</source>
         <translation>BARE kärn klient</translation>
     </message>
     <message>
@@ -837,14 +837,14 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Kärna</translation>
     </message>
     <message>
@@ -1232,7 +1232,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Kärna</translation>
     </message>
     </context>

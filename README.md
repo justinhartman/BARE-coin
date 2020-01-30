@@ -3,7 +3,7 @@
 *** BETA SOFTWARE - USE AT YOUR OWN RISK ***
 
 BARE 2.0
-Bare Core integration/staging repository
+BARE Coin integration/staging repository
 =====================================
 
 BARE is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.

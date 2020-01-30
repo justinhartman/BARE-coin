@@ -598,7 +598,7 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE kerne</translation>
     </message>
     <message>
@@ -618,11 +618,11 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
+        <source>&amp;About BARE Coin</source>
         <translation>&amp;Om BARE kerne</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>Vis information om BARE kerne</translation>
     </message>
     <message>
@@ -678,11 +678,11 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
         <translation>Vis hjelpetekster fra BARE kernen for at få en liste med mulige BARE kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
+        <source>BARE Coin client</source>
         <translation>BARE kerneklient</translation>
     </message>
     <message>
@@ -1144,7 +1144,7 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE kerne</translation>
     </message>
     <message>
@@ -1152,7 +1152,7 @@ Adresse: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
+        <source>About BARE Coin</source>
         <translation>om BARE kerne</translation>
     </message>
     <message>
@@ -1199,15 +1199,15 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
+        <source>Welcome to BARE Coin.</source>
         <translation>Velkommen til BARE kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
         <translation>Da det er første gang programmet startes, kan De vælge hvor BARE kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>BARE kernen vil nu hente og gemme en kopi af BARE blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
@@ -1219,7 +1219,7 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE kerne</translation>
     </message>
     <message>
@@ -3019,7 +3019,7 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
+        <source>BARE Coin is shutting down...</source>
         <translation>BARE kernen lukker ned</translation>
     </message>
     <message>
@@ -3169,7 +3169,7 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE kerne</translation>
     </message>
     <message>
@@ -3185,7 +3185,7 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The BARE Core developers</source>
+        <source>The BARE Coin developers</source>
         <translation>BARE "core" udviklerne</translation>
     </message>
     <message>
@@ -3794,8 +3794,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. BARE Core is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. BARE core kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. BARE Coin is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. BARE coin kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3979,7 +3979,7 @@ For eksempel: alertnotify=Echo %% | mail - s "BARE ALARM!" e-mail@administrator.
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. BARE Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. BARE Coin is probably already running.</source>
         <translation>Det var ikke muligt at forbinde %s på denne computer. BARE kører sandsynligvis allerede.</translation>
     </message>
     <message>
@@ -4007,8 +4007,8 @@ For eksempel: alertnotify=Echo %% | mail - s "BARE ALARM!" e-mail@administrator.
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Core will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil BARE core ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Coin will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil BARE coin ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4155,8 +4155,8 @@ For eksempel: alertnotify=Echo %% | mail - s "BARE ALARM!" e-mail@administrator.
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The BARE Core Developers</source>
-        <translation>Copyright (C) 2015-%i The BARE Core Developers</translation>
+        <source>Copyright (C) 2015-%i The BARE Coin Developers</source>
+        <translation>Copyright (C) 2015-%i The BARE Coin Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4227,8 +4227,8 @@ For eksempel: alertnotify=Echo %% | mail - s "BARE ALARM!" e-mail@administrator.
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BARE Core</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af BARE core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BARE Coin</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af BARE coin</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4339,8 +4339,8 @@ For eksempel: alertnotify=Echo %% | mail - s "BARE ALARM!" e-mail@administrator.
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. BARE Core is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. BARE core lukker ned. </translation>
+        <source>Initialization sanity check failed. BARE Coin is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. BARE coin lukker ned. </translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4895,8 +4895,8 @@ For eksempel: alertnotify=Echo %% | mail - s "BARE ALARM!" e-mail@administrator.
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart BARE Core to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart BARE core for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart BARE Coin to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart BARE coin for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

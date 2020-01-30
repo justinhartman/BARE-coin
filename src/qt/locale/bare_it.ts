@@ -590,8 +590,8 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Send coins to a BARE address</source>
@@ -610,12 +610,12 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
-        <translation>&amp;Informazioni BARE Core</translation>
+        <source>&amp;About BARE Coin</source>
+        <translation>&amp;Informazioni BARE Coin</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
-        <translation>Visualizza informazioni su BARE Core</translation>
+        <source>Show information about BARE Coin</source>
+        <translation>Visualizza informazioni su BARE Coin</translation>
     </message>
     <message>
         <source>Modify configuration options for BARE</source>
@@ -646,8 +646,8 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
-        <translation>Mostra il messaggio di aiuto BARE Core per ottenere un elenco con le possibili opzioni di riga di comando BARE</translation>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
+        <translation>Mostra il messaggio di aiuto BARE Coin per ottenere un elenco con le possibili opzioni di riga di comando BARE</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -915,8 +915,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1215,8 +1215,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     </context>
 <context>

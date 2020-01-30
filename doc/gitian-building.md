@@ -1,7 +1,7 @@
 Gitian building
 ================
 
-*Setup instructions for a Gitian build of BARE Core using a VM or physical system.*
+*Setup instructions for a Gitian build of BARE Coin using a VM or physical system.*
 
 Gitian is the deterministic build process that is used to build the BARE
 Core executables. It provides a way to be reasonably sure that the
@@ -22,7 +22,7 @@ Table of Contents
 
 - [Preparing the Gitian builder host](#preparing-the-gitian-builder-host)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building BARE Core](#building-bare-coin)
+- [Building BARE Coin](#building-bare-coin)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -62,10 +62,10 @@ manual intervention. Also optionally follow the next step: 'Seed the Gitian sour
 and offline git repositories' which will fetch the remaining files required for building
 offline.
 
-Building BARE Core
+Building BARE Coin
 ----------------
 
-To build BARE Core (for Linux, OS X and Windows) just follow the steps under 'perform
+To build BARE Coin (for Linux, OS X and Windows) just follow the steps under 'perform
 Gitian builds' in [https://github.com/bareproject/bare/blob/master/doc/release-process.md](https://github.com/bareproject/bare/blob/master/doc/release-process.md#setup-and-perform-gitian-builds) in the bare repository.
 
 This may take some time as it will build all the dependencies needed for each descriptor.

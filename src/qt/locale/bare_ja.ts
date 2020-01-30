@@ -606,7 +606,7 @@
         <translation>ツールバー</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE コア</translation>
     </message>
     <message>
@@ -626,11 +626,11 @@
         <translation>マスターノードを参照</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
+        <source>&amp;About BARE Coin</source>
         <translation>&amp;BARE コアについて</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>BARE コアの情報をみる</translation>
     </message>
     <message>
@@ -686,11 +686,11 @@
         <translation>ブロックエクスプローラ</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
         <translation>BARE コアのヘルプメッセージを表示してコマンドラインオプションを確認する</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
+        <source>BARE Coin client</source>
         <translation>BARE コア クライアント</translation>
     </message>
     <message numerus="yes">
@@ -1250,7 +1250,7 @@ Address: %4
         <translation>バージョン</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE コア</translation>
     </message>
     <message>
@@ -1258,7 +1258,7 @@ Address: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
+        <source>About BARE Coin</source>
         <translation>BARE コアについて</translation>
     </message>
     <message>
@@ -1305,15 +1305,15 @@ Address: %4
         <translation>ようこそ</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
+        <source>Welcome to BARE Coin.</source>
         <translation>BARE コアへようこそ</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
         <translation>これが初期起動の場合、データフォルダの場所を選択できます。</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>BARE コアはBAREのブロックチェーンデータをダウンロードします。データフォルダには少なくとも %1 GB程度の空き容量が必要です。ウォレットデータもこの場所へ保存されます。</translation>
     </message>
     <message>
@@ -1325,7 +1325,7 @@ Address: %4
         <translation>カスタムデータフォルダを利用する:</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE コア</translation>
     </message>
     <message>
@@ -2444,7 +2444,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in bare.conf</source>
         <translation></translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE コア</translation>
     </message>
     <message>
@@ -2464,7 +2464,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in bare.conf</source>
         <translation>マスターノード設定ファイル(masternode.conf)の読み込みでエラーが発生しました %1</translation>
     </message>
     <message>
-        <source>BARE Core didn&apos;t yet exit safely...</source>
+        <source>BARE Coin didn&apos;t yet exit safely...</source>
         <translation>BARE コアは正常に停止していません...</translation>
     </message>
     <message>
@@ -3450,7 +3450,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in bare.conf</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
+        <source>BARE Coin is shutting down...</source>
         <translation>BARE コアは停止中です...</translation>
     </message>
     <message>
@@ -3600,7 +3600,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in bare.conf</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE コア</translation>
     </message>
     <message>
@@ -3616,7 +3616,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in bare.conf</source>
         <translation>Dash コア開発者チーム</translation>
     </message>
     <message>
-        <source>The BARE Core developers</source>
+        <source>The BARE Coin developers</source>
         <translation>BARE コア開発者チーム</translation>
     </message>
     <message>
@@ -4332,7 +4332,7 @@ To enable AutoMint add &apos;enablezeromint=1&apos; in bare.conf</source>
         <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. BARE Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. BARE Coin is probably already running.</source>
         <translation>%s のデータフォルダをロックできません。 BARE コアは既に実行されています。</translation>
     </message>
     <message>
@@ -4530,7 +4530,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BARE Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. BARE Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. BARE Coin is probably already running.</source>
         <translation>%s をbind出来ませんでした。BAREコアは既に動作しているようです。</translation>
     </message>
     <message>
@@ -4558,8 +4558,8 @@ for example: alertnotify=echo %%s | mail -s &quot;BARE Alert&quot; admin@foo.com
         <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BARE Core will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BARE Core will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BARE Coin will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BARE Coin will not work properly.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4706,7 +4706,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BARE Alert&quot; admin@foo.com
         <translation>Copyright (C) 2014-%i Dash コア開発者チーム</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The BARE Core Developers</source>
+        <source>Copyright (C) 2015-%i The BARE Coin Developers</source>
         <translation>Copyright (C) 2015-%i BARE コア開発者チーム</translation>
     </message>
     <message>
@@ -4778,7 +4778,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BARE Alert&quot; admin@foo.com
         <translation>wallet.datの読み込みにエラー発生: ウォレットが破損しています</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BARE Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of BARE Coin</source>
         <translation>Ewallet.datの読み込みにエラー発生: ウォレットデータの読み込みに新しいバージョンのBARE コアが必要です</translation>
     </message>
     <message>
@@ -4890,7 +4890,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BARE Alert&quot; admin@foo.com
         <translation>情報</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. BARE Core is shutting down.</source>
+        <source>Initialization sanity check failed. BARE Coin is shutting down.</source>
         <translation>初期サニティチェックが失敗しました。BAREコアは終了します。</translation>
     </message>
     <message>
@@ -5510,7 +5510,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BARE Alert&quot; admin@foo.com
         <translation>ウォレットはロックされています。</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart BARE Core to complete</source>
+        <source>Wallet needed to be rewritten: restart BARE Coin to complete</source>
         <translation>ウォレットは再書き込みが必要です。BARE コアを再起動してください。</translation>
     </message>
     <message>
@@ -5666,7 +5666,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BARE Alert&quot; admin@foo.com
         <translation>Copyright (C) 2015-%i PIVX コア開発者チーム</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The BARE Core Developers</source>
+        <source>Copyright (C) 2017-%i The BARE Coin Developers</source>
         <translation>Copyright (C) 2015-%i BARE コア開発者チーム {2017-?}</translation>
     </message>
     <message>

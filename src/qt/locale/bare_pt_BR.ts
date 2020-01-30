@@ -586,8 +586,8 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Send coins to a BARE address</source>
@@ -606,12 +606,12 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
-        <translation>&amp;Sobre o BARE Core</translation>
+        <source>&amp;About BARE Coin</source>
+        <translation>&amp;Sobre o BARE Coin</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
-        <translation>Mostra informação sobre o BARE Core</translation>
+        <source>Show information about BARE Coin</source>
+        <translation>Mostra informação sobre o BARE Coin</translation>
     </message>
     <message>
         <source>Modify configuration options for BARE</source>
@@ -666,11 +666,11 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
-        <translation>Mostra a ajuda da BARE Core para receber uma lista com possíveis opções de linha de comando BARE</translation>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
+        <translation>Mostra a ajuda da BARE Coin para receber uma lista com possíveis opções de linha de comando BARE</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
+        <source>BARE Coin client</source>
         <translation>Cliente Core BARE</translation>
     </message>
     <message>
@@ -1129,16 +1129,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
-        <translation>Sobre o BARE Core</translation>
+        <source>About BARE Coin</source>
+        <translation>Sobre o BARE Coin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1172,16 +1172,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
-        <translation>Bem-vindo ao BARE Core.</translation>
+        <source>Welcome to BARE Coin.</source>
+        <translation>Bem-vindo ao BARE Coin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde BARE Core vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde BARE Coin vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>BARE Core vai baixar e armazenar uma cópia da blockchain BARE. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BARE Coin vai baixar e armazenar uma cópia da blockchain BARE. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1192,8 +1192,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2715,8 +2715,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
-        <translation>BARE Core está desligando...</translation>
+        <source>BARE Coin is shutting down...</source>
+        <translation>BARE Coin está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2857,8 +2857,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2873,8 +2873,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The BARE Core developers</source>
-        <translation>Os desenvolvedores do BARE Core</translation>
+        <source>The BARE Coin developers</source>
+        <translation>Os desenvolvedores do BARE Coin</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3474,7 +3474,7 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Core will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Coin will not work properly.</source>
         <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core BARE não vai funcionar corretamente.</translation>
     </message>
     <message>
@@ -3554,8 +3554,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The BARE Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do BARE Core</translation>
+        <source>Copyright (C) 2015-%i The BARE Coin Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do BARE Coin</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3606,8 +3606,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BARE Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da BARE Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BARE Coin</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da BARE Coin</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4078,8 +4078,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart BARE Core to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o BARE Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart BARE Coin to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o BARE Coin para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

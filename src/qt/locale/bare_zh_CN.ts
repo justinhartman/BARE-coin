@@ -602,8 +602,8 @@
         <translation>标签工具栏</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Send coins to a BARE address</source>
@@ -630,11 +630,11 @@
         <translation>浏览主节点</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
-        <translation>&amp;A关于BARE Core</translation>
+        <source>&amp;About BARE Coin</source>
+        <translation>&amp;A关于BARE Coin</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>显示BARE  Core的相关信息</translation>
     </message>
     <message>
@@ -690,12 +690,12 @@
         <translation>区块浏览窗口</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
-        <translation>显示BARE Core帮助信息并获取BARE命令行选项列表</translation>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
+        <translation>显示BARE Coin帮助信息并获取BARE命令行选项列表</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>BARE Core 客户端</translation>
+        <source>BARE Coin client</source>
+        <translation>BARE Coin 客户端</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to BARE network</source>
@@ -865,31 +865,31 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
-        <translation>关于BARE Core</translation>
+        <source>About BARE Coin</source>
+        <translation>关于BARE Coin</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Welcome to BARE Core.</source>
-        <translation>欢迎使用 BARE Core</translation>
+        <source>Welcome to BARE Coin.</source>
+        <translation>欢迎使用 BARE Coin</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
-        <translation>由于这是该程序第一次启动，您可以选择存储BARE Core 数据的位置。</translation>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
+        <translation>由于这是该程序第一次启动，您可以选择存储BARE Coin 数据的位置。</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>BARE Core将下载并存储BARE区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BARE Coin将下载并存储BARE区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1508,8 +1508,8 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     </context>
 <context>
@@ -1597,8 +1597,8 @@ Address: %4
         <translation>在收到相关警报时执行命令，或者看到一个很长的分叉（cmd中的%s被消息替换）</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Core will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，BARE Core将无法正常工作。</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Coin will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，BARE Coin将无法正常工作。</translation>
     </message>
     <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>

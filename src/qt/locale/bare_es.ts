@@ -602,7 +602,7 @@
         <translation>Herramienta de pestañas</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>Núcleo BARE</translation>
     </message>
     <message>
@@ -630,11 +630,11 @@
         <translation>Explorar nodos maestros</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
+        <source>&amp;About BARE Coin</source>
         <translation>&amp;Sobre el núcleo de BARE</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>Mostrar información sobre el núcleo de BARE</translation>
     </message>
     <message>
@@ -690,12 +690,12 @@
         <translation>Ventana del explorador de bloques</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
-        <translation>Mostrar la ayuda de BARE Core para obtener una lista de posibles opciones en línea de comandos</translation>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
+        <translation>Mostrar la ayuda de BARE Coin para obtener una lista de posibles opciones en línea de comandos</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>Cliente BARE Core</translation>
+        <source>BARE Coin client</source>
+        <translation>Cliente BARE Coin</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to BARE network</source>
@@ -1188,7 +1188,7 @@ MultiEnvío: %1</translation>
         <translation>versión</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>Núcleo BARE</translation>
     </message>
     <message>
@@ -1196,8 +1196,8 @@ MultiEnvío: %1</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
-        <translation>Acerca de BARE Core</translation>
+        <source>About BARE Coin</source>
+        <translation>Acerca de BARE Coin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ MultiEnvío: %1</translation>
         <translation>Bienvenido/a</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
-        <translation>Bienvenido/a a BARE Core.</translation>
+        <source>Welcome to BARE Coin.</source>
+        <translation>Bienvenido/a a BARE Coin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
-        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará BARE Core sus datos.</translation>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
+        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará BARE Coin sus datos.</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>BARE Core descargará y guardará una copia de la cadena de bloques BARE. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BARE Coin descargará y guardará una copia de la cadena de bloques BARE. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,7 +1263,7 @@ MultiEnvío: %1</translation>
         <translation>Usar una carpeta de datos personalizada:</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>Núcleo BARE</translation>
     </message>
     <message>
@@ -3473,7 +3473,7 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
+        <source>BARE Coin is shutting down...</source>
         <translation>El programa BARE se está cerrando...</translation>
     </message>
     <message>
@@ -3623,7 +3623,7 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>Núcleo BARE</translation>
     </message>
     <message>
@@ -3639,8 +3639,8 @@ Por favor tenga paciencia...</translation>
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The BARE Core developers</source>
-        <translation>Los desarrolladores de BARE Core</translation>
+        <source>The BARE Coin developers</source>
+        <translation>Los desarrolladores de BARE Coin</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4332,8 +4332,8 @@ Por favor tenga paciencia...</translation>
         <translation>El punto de chequeo del acumulador que hemos calculado no coincide con lo guardado en el índice de bloques</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. BARE Core is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. BARE Core esta probablemente en ejecución.</translation>
+        <source>Cannot obtain a lock on data directory %s. BARE Coin is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. BARE Coin esta probablemente en ejecución.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4520,8 +4520,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "BARE Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. BARE Core is probably already running.</source>
-        <translation>Imposible conectar a %s en esta computadora. Es probable que BARE Core ya este corriendo.</translation>
+        <source>Unable to bind to %s on this computer. BARE Coin is probably already running.</source>
+        <translation>Imposible conectar a %s en esta computadora. Es probable que BARE Coin ya este corriendo.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4548,8 +4548,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Core will not work properly.</source>
-        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora BARE Core no funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Coin will not work properly.</source>
+        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora BARE Coin no funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4704,8 +4704,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The BARE Core Developers</source>
-        <translation>Copyright (C) 2015-%i The BARE Core Developers</translation>
+        <source>Copyright (C) 2015-%i The BARE Coin Developers</source>
+        <translation>Copyright (C) 2015-%i The BARE Coin Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4784,7 +4784,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Error al cargar wallet.dat: Billetera dañada</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BARE Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of BARE Coin</source>
         <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo BARE</translation>
     </message>
     <message>
@@ -4896,8 +4896,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. BARE Core is shutting down.</source>
-        <translation>La prueba de salud de inicialización ha fallado. BARE Core se cerrará.</translation>
+        <source>Initialization sanity check failed. BARE Coin is shutting down.</source>
+        <translation>La prueba de salud de inicialización ha fallado. BARE Coin se cerrará.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5572,8 +5572,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Monedero bloqueado.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart BARE Core to complete</source>
-        <translation>Monedero necesita ser reescrito: reinicie BARE Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart BARE Coin to complete</source>
+        <translation>Monedero necesita ser reescrito: reinicie BARE Coin para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

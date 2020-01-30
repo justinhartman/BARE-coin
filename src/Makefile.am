@@ -86,7 +86,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE
-# bare core #
+# BARE Coin #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \

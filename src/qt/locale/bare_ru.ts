@@ -594,8 +594,8 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Send coins to a BARE address</source>
@@ -622,12 +622,12 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
-        <translation>&amp;О BARE Core</translation>
+        <source>&amp;About BARE Coin</source>
+        <translation>&amp;О BARE Coin</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
-        <translation>Показать информацию о BARE Core</translation>
+        <source>Show information about BARE Coin</source>
+        <translation>Показать информацию о BARE Coin</translation>
     </message>
     <message>
         <source>Modify configuration options for BARE</source>
@@ -682,12 +682,12 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
         <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды BARE</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>Клиент BARE Core</translation>
+        <source>BARE Coin client</source>
+        <translation>Клиент BARE Coin</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1156,16 +1156,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
-        <translation>О BARE Core</translation>
+        <source>About BARE Coin</source>
+        <translation>О BARE Coin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1211,16 +1211,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
-        <translation>Добро пожаловать в BARE Core.</translation>
+        <source>Welcome to BARE Coin.</source>
+        <translation>Добро пожаловать в BARE Coin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные BARE Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные BARE Coin.</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>BARE Core загрузит и сохранит копию цепочки блоков BARE. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BARE Coin загрузит и сохранит копию цепочки блоков BARE. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1231,8 +1231,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2840,8 +2840,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
-        <translation>BARE Core выключается...</translation>
+        <source>BARE Coin is shutting down...</source>
+        <translation>BARE Coin выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2930,8 +2930,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2946,8 +2946,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>The BARE Core developers</source>
-        <translation>Разработчики BARE Core</translation>
+        <source>The BARE Coin developers</source>
+        <translation>Разработчики BARE Coin</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3239,8 +3239,8 @@ https://www.transifex.com/bare-project/bare-project-translations</translation>
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The BARE Core Developers</source>
-        <translation>Copyright (C) 2015-%i Разработчики BARE Core</translation>
+        <source>Copyright (C) 2015-%i The BARE Coin Developers</source>
+        <translation>Copyright (C) 2015-%i Разработчики BARE Coin</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

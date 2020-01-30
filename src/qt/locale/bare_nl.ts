@@ -602,7 +602,7 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Kern</translation>
     </message>
     <message>
@@ -630,11 +630,11 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
+        <source>&amp;About BARE Coin</source>
         <translation>&amp;Over BARE Kern</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>Toon informatie over BARE Kern</translation>
     </message>
     <message>
@@ -690,12 +690,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
-        <translation>Toon het BARE Core help bericht om een ​​lijst te krijgen met mogelijke BARE command line opties</translation>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
+        <translation>Toon het BARE Coin help bericht om een ​​lijst te krijgen met mogelijke BARE command line opties</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>BARE Core client</translation>
+        <source>BARE Coin client</source>
+        <translation>BARE Coin client</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to BARE network</source>
@@ -1180,7 +1180,7 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Kern</translation>
     </message>
     <message>
@@ -1188,8 +1188,8 @@ MultiSend: %1</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BARE Core</source>
-        <translation>Over BARE Core</translation>
+        <source>About BARE Coin</source>
+        <translation>Over BARE Coin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1227,16 +1227,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
-        <translation>Welkom bij BARE Core</translation>
+        <source>Welcome to BARE Coin.</source>
+        <translation>Welkom bij BARE Coin</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BARE Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar BARE Core zijn gegevens opslaat.</translation>
+        <source>As this is the first time the program is launched, you can choose where BARE Coin will store its data.</source>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar BARE Coin zijn gegevens opslaat.</translation>
     </message>
     <message>
-        <source>BARE Core will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>BARE Core zal een kopie van de BARE blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee wordt ook in deze map opgeslagen.</translation>
+        <source>BARE Coin will download and store a copy of the BARE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BARE Coin zal een kopie van de BARE blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee wordt ook in deze map opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1247,7 +1247,7 @@ MultiSend: %1</translation>
         <translation>Gebruik een aangepaste data directory:</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Kern</translation>
     </message>
     <message>
@@ -3457,8 +3457,8 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
-        <translation>BARE Core is aan het afsluiten...</translation>
+        <source>BARE Coin is shutting down...</source>
+        <translation>BARE Coin is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3607,7 +3607,7 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Kern</translation>
     </message>
     <message>
@@ -3623,7 +3623,7 @@ Wees alsjeblieft geduldig...</translation>
         <translation>De Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>The BARE Core developers</source>
+        <source>The BARE Coin developers</source>
         <translation>De BARE Kernontwikkelaars</translation>
     </message>
     <message>
@@ -4312,8 +4312,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. BARE Core is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. BARE Core loopt waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. BARE Coin is probably already running.</source>
+        <translation>Kan geen vergrendeling op data directory %s verkrijgen. BARE Coin loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4500,8 +4500,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "BARE Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. BARE Core is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. BARE Core loopt waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. BARE Coin is probably already running.</source>
+        <translation>Niet mogelijk te binden aan %s op deze computer. BARE Coin loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4528,8 +4528,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt BARE Core niet goed.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BARE Coin will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt BARE Coin niet goed.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4684,7 +4684,7 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The BARE Core Developers</source>
+        <source>Copyright (C) 2015-%i The BARE Coin Developers</source>
         <translation>Copyright (C) 2015-%i The BARE Kernontwikkelaars</translation>
     </message>
     <message>
@@ -4764,8 +4764,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BARE Core</source>
-        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van BARE Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BARE Coin</source>
+        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van BARE Coin</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4876,8 +4876,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. BARE Core is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. BARE Core wordt afgesloten.</translation>
+        <source>Initialization sanity check failed. BARE Coin is shutting down.</source>
+        <translation>Initialisatie saniteitscontrole mislukt. BARE Coin wordt afgesloten.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5552,8 +5552,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "BARE Alert" admin@foo.com
         <translation>Portemonnee is vergrendeld.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart BARE Core to complete</source>
-        <translation>Wallet moest worden herschreven: start BARE Core opnieuw om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart BARE Coin to complete</source>
+        <translation>Wallet moest worden herschreven: start BARE Coin opnieuw om te voltooien</translation>
     </message>
     <message>
         <source>Wallet options:</source>

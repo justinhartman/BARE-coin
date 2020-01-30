@@ -613,8 +613,8 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE CORE</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Send coins to a BARE address</source>
@@ -637,11 +637,11 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
+        <source>&amp;About BARE Coin</source>
         <translation>Pıvx core Hakkında</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
@@ -698,12 +698,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
-        <translation>Olası BARE komut satırı seçeneklerine sahip bir liste almak için BARE Core yardım mesajını gösterin</translation>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
+        <translation>Olası BARE komut satırı seçeneklerine sahip bir liste almak için BARE Coin yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>BARE Core istemci</translation>
+        <source>BARE Coin client</source>
+        <translation>BARE Coin istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1121,8 +1121,8 @@ Adres: %4</translation>
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE CORE</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -1144,16 +1144,16 @@ Adres: %4</translation>
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
-        <translation>BARE Core'a hoşgeldiniz.</translation>
+        <source>Welcome to BARE Coin.</source>
+        <translation>BARE Coin'a hoşgeldiniz.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Varsayılan veri dosyasını kullanınız</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE CORE</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1587,8 +1587,8 @@ Adres: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE CORE</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     </context>
 <context>

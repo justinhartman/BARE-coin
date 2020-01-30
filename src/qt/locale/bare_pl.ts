@@ -518,7 +518,7 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>&amp;Rdzeń BARE</translation>
     </message>
     <message>
@@ -538,11 +538,11 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
+        <source>&amp;About BARE Coin</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
@@ -594,11 +594,11 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
         <translation>Pokaż wiadomość pomocy rdzenia BARE, aby dostać listę możliwych opcji BARE command-line</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
+        <source>BARE Coin client</source>
         <translation>Rdzeń BARE klient</translation>
     </message>
     <message>
@@ -912,7 +912,7 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>&amp;Rdzeń BARE</translation>
     </message>
     </context>
@@ -927,7 +927,7 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>&amp;Rdzeń BARE</translation>
     </message>
     <message>
@@ -1935,7 +1935,7 @@ https://www.transifex.com/bare-project/bare-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>&amp;Rdzeń BARE</translation>
     </message>
     </context>

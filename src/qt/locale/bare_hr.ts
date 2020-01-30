@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>BARE Core klijent</translation>
+        <source>BARE Coin client</source>
+        <translation>BARE Coin klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
-        <translation>BARE Core se gasi...</translation>
+        <source>BARE Coin is shutting down...</source>
+        <translation>BARE Coin se gasi...</translation>
     </message>
     </context>
 <context>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Version %1</source>

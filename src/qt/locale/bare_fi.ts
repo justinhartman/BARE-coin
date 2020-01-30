@@ -591,7 +591,7 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Ydin</translation>
     </message>
     <message>
@@ -611,11 +611,11 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
-        <translation>BARE Core &amp;ytimestä</translation>
+        <source>&amp;About BARE Coin</source>
+        <translation>BARE Coin &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
+        <source>Show information about BARE Coin</source>
         <translation>Näytä tietoja BARE Ytimestä</translation>
     </message>
     <message>
@@ -671,11 +671,11 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
         <translation>Näytä BARE Ydin apuviesti saadaksesi lista mahdollisista BARE komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
+        <source>BARE Coin client</source>
         <translation>BARE Ydin asiakasohjelma</translation>
     </message>
     <message>
@@ -934,7 +934,7 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Ydin</translation>
     </message>
     <message>
@@ -953,11 +953,11 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to BARE Core.</source>
+        <source>Welcome to BARE Coin.</source>
         <translation>Tervetuloa BARE Ytimeen.</translation>
     </message>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Ydin</translation>
     </message>
     <message>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BARE Core is shutting down...</source>
-        <translation>BARE core sammuu...</translation>
+        <source>BARE Coin is shutting down...</source>
+        <translation>BARE coin sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2214,7 +2214,7 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
+        <source>BARE Coin</source>
         <translation>BARE Ydin</translation>
     </message>
     <message>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The BARE Core developers</source>
-        <translation>BARE core kehittäjät</translation>
+        <source>The BARE Coin developers</source>
+        <translation>BARE coin kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BARE Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version BARE Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BARE Coin</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version BARE Coinsta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

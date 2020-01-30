@@ -1,7 +1,7 @@
-Contributing to BARE Core
+Contributing to BARE Coin
 ============================
 
-The BARE Core project operates an open contributor model where anyone is
+The BARE Coin project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
@@ -157,10 +157,10 @@ where possible keep them short, un-complex and easy to verify.
 "Decision Making" Process
 -------------------------
 
-The following applies to code changes to the BARE Core project, and is not to be
+The following applies to code changes to the BARE Coin project, and is not to be
 confused with overall BARE Network Protocol consensus changes.
 
-Whether a pull request is merged into BARE Core rests with the project merge
+Whether a pull request is merged into BARE Coin rests with the project merge
 maintainers and ultimately the project lead.
 
 Maintainers will take into consideration if a patch is in line with the general
@@ -254,7 +254,7 @@ about:
 Release Policy
 --------------
 
-The project leader is the release manager for each BARE Core release.
+The project leader is the release manager for each BARE Coin release.
 
 Copyright
 ---------

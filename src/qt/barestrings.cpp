@@ -35,7 +35,7 @@ QT_TRANSLATE_NOOP("bare-coin", ""
 QT_TRANSLATE_NOOP("bare-coin", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
 QT_TRANSLATE_NOOP("bare-coin", ""
-"Cannot obtain a lock on data directory %s. BARE Core is probably already "
+"Cannot obtain a lock on data directory %s. BARE Coin is probably already "
 "running."),
 QT_TRANSLATE_NOOP("bare-coin", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -183,7 +183,7 @@ QT_TRANSLATE_NOOP("bare-coin", ""
 "It is also recommended to set alertnotify so you are notified of problems;\n"
 "for example: alertnotify=echo %%s | mail -s \"BARE Alert\" admin@foo.com\n"),
 QT_TRANSLATE_NOOP("bare-coin", ""
-"Unable to bind to %s on this computer. BARE Core is probably already running."),
+"Unable to bind to %s on this computer. BARE Coin is probably already running."),
 QT_TRANSLATE_NOOP("bare-coin", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("bare-coin", ""
@@ -203,7 +203,7 @@ QT_TRANSLATE_NOOP("bare-coin", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("bare-coin", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong BARE Core will not work properly."),
+"your clock is wrong BARE Coin will not work properly."),
 QT_TRANSLATE_NOOP("bare-coin", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -260,7 +260,8 @@ QT_TRANSLATE_NOOP("bare-coin", "Connection options:"),
 QT_TRANSLATE_NOOP("bare-coin", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("bare-coin", "Copyright (C) 2014-%i The Dash Core Developers"),
 QT_TRANSLATE_NOOP("bare-coin", "Copyright (C) 2015-%i The PIVX Core Developers"),
-QT_TRANSLATE_NOOP("bare-coin", "Copyright (C) 2017-%i The BARE Core Developers"),
+QT_TRANSLATE_NOOP("bare-coin", "Copyright (C) 2017-%i The MonetaryUnit Core Developers"),
+QT_TRANSLATE_NOOP("bare-coin", "Copyright (C) 2019-%i The BARE Coin Developers"),
 QT_TRANSLATE_NOOP("bare-coin", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("bare-coin", "Could not parse -rpcbind value %s as network address"),
 QT_TRANSLATE_NOOP("bare-coin", "Could not parse masternode.conf"),
@@ -290,7 +291,7 @@ QT_TRANSLATE_NOOP("bare-coin", "Error initializing wallet database environment %
 QT_TRANSLATE_NOOP("bare-coin", "Error loading block database"),
 QT_TRANSLATE_NOOP("bare-coin", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("bare-coin", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("bare-coin", "Error loading wallet.dat: Wallet requires newer version of BARE Core"),
+QT_TRANSLATE_NOOP("bare-coin", "Error loading wallet.dat: Wallet requires newer version of BARE Coin"),
 QT_TRANSLATE_NOOP("bare-coin", "Error opening block database"),
 QT_TRANSLATE_NOOP("bare-coin", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("bare-coin", "Error recovering public key."),
@@ -320,7 +321,7 @@ QT_TRANSLATE_NOOP("bare-coin", "Incompatible mode."),
 QT_TRANSLATE_NOOP("bare-coin", "Incompatible version."),
 QT_TRANSLATE_NOOP("bare-coin", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("bare-coin", "Information"),
-QT_TRANSLATE_NOOP("bare-coin", "Initialization sanity check failed. BARE Core is shutting down."),
+QT_TRANSLATE_NOOP("bare-coin", "Initialization sanity check failed. BARE Coin is shutting down."),
 QT_TRANSLATE_NOOP("bare-coin", "Input is not valid."),
 QT_TRANSLATE_NOOP("bare-coin", "Insufficient funds"),
 QT_TRANSLATE_NOOP("bare-coin", "Insufficient funds."),
@@ -474,7 +475,7 @@ QT_TRANSLATE_NOOP("bare-coin", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("bare-coin", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("bare-coin", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("bare-coin", "Wallet is locked."),
-QT_TRANSLATE_NOOP("bare-coin", "Wallet needed to be rewritten: restart BARE Core to complete"),
+QT_TRANSLATE_NOOP("bare-coin", "Wallet needed to be rewritten: restart BARE Coin to complete"),
 QT_TRANSLATE_NOOP("bare-coin", "Wallet options:"),
 QT_TRANSLATE_NOOP("bare-coin", "Wallet window title"),
 QT_TRANSLATE_NOOP("bare-coin", "Warning"),

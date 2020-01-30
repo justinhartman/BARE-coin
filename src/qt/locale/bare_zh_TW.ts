@@ -582,8 +582,8 @@
         <translation>Tabs 工具列</translation>
     </message>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     <message>
         <source>Send coins to a BARE address</source>
@@ -602,12 +602,12 @@
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BARE Core</source>
-        <translation>&amp;關於 BARE Core</translation>
+        <source>&amp;About BARE Coin</source>
+        <translation>&amp;關於 BARE Coin</translation>
     </message>
     <message>
-        <source>Show information about BARE Core</source>
-        <translation>顯示 BARE Core 相關資訊</translation>
+        <source>Show information about BARE Coin</source>
+        <translation>顯示 BARE Coin 相關資訊</translation>
     </message>
     <message>
         <source>Modify configuration options for BARE</source>
@@ -662,12 +662,12 @@
         <translation>區塊鏈瀏覽視窗</translation>
     </message>
     <message>
-        <source>Show the BARE Core help message to get a list with possible BARE command-line options</source>
-        <translation>顯示 BARE Core 幫助訊息以取得 BARE 命令列表選項</translation>
+        <source>Show the BARE Coin help message to get a list with possible BARE command-line options</source>
+        <translation>顯示 BARE Coin 幫助訊息以取得 BARE 命令列表選項</translation>
     </message>
     <message>
-        <source>BARE Core client</source>
-        <translation>BARE Core 客戶端</translation>
+        <source>BARE Coin client</source>
+        <translation>BARE Coin 客戶端</translation>
     </message>
     </context>
 <context>
@@ -696,15 +696,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     </context>
 <context>
@@ -907,8 +907,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BARE Core</source>
-        <translation>BARE Core</translation>
+        <source>BARE Coin</source>
+        <translation>BARE Coin</translation>
     </message>
     </context>
 <context>

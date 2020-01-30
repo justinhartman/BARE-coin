@@ -1272,8 +1272,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart BARE Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o BARE Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart BARE Coin to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o BARE Coin para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>
