@@ -57,7 +57,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256(""));
+    (     0, uint256("0x683cae43fabf1bf30e9296bb49ffca12ad89830d550541386c9e8549ababa0bf"));
     
 
 static const Checkpoints::CCheckpointData data = {
@@ -69,7 +69,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256(""));
+    boost::assign::map_list_of(0, uint256("0x0a0ebf26a17ac734ee5079dbfbcdf03f55fde1f98b2c420553f2c2f7b2c51cf6"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     0,
@@ -77,7 +77,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256(""));
+    boost::assign::map_list_of(0, uint256("0x6d5a7dd2335cdf92bbaf11e77d96ef324f50f239bb4d8643c11ada31198cd55d"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     0,
@@ -139,7 +139,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 0;
+        genesis.nTime = 1581171336; // Saturday, February 8, 2020 3:15:36 PM GMT+01:00
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 243603;
 
@@ -169,10 +169,10 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256(""));
-            assert(genesis.hashMerkleRoot == uint256(""));
+            assert(hashGenesisBlock == uint256("0x683cae43fabf1bf30e9296bb49ffca12ad89830d550541386c9e8549ababa0bf"));
+            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
         }
-        // Mainnet --- nonce: 1 time: 1536266133 hash: 0x merklehash: 0xe
+// Mainnet --- nonce: 243605 time: 1581171336 hash: 0x683cae43fabf1bf30e9296bb49ffca12ad89830d550541386c9e8549ababa0bf merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
 
         vSeeds.push_back(CDNSSeedData("dns1", "v2dns1.bare.network"));
         vSeeds.push_back(CDNSSeedData("dns2", "v2dns2.bare.network"));
@@ -242,7 +242,7 @@ public:
         nLastPOWBlock = 250;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 0;
+        genesis.nTime = 1581171337; // Saturday, February 8, 2020 3:15:37 PM GMT+01:00
         genesis.nNonce = 274266;
 
         hashGenesisBlock = genesis.GetHash();
@@ -272,10 +272,10 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256(""));
-            assert(genesis.hashMerkleRoot == uint256(""));
+            assert(hashGenesisBlock == uint256("0x0a0ebf26a17ac734ee5079dbfbcdf03f55fde1f98b2c420553f2c2f7b2c51cf6"));
+            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
         }
-        // Testnet --- nonce: 1 time: 1505224800 hash: 0x merklehash: 0x
+// Testnet --- nonce: 274266 time: 1581171337 hash: 0x0a0ebf26a17ac734ee5079dbfbcdf03f55fde1f98b2c420553f2c2f7b2c51cf6 merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -328,7 +328,6 @@ public:
     {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        strNetworkID = "regtest";
         pchMessageStart[0] = 0x54;
         pchMessageStart[1] = 0x14;
         pchMessageStart[2] = 0x64;
@@ -340,9 +339,9 @@ public:
         nTargetTimespan = 24 * 60 * 60; // BARE: 1 day
         nTargetSpacing = 1 * 60;        // BARE: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 0;
+        genesis.nTime = 1581171338; // Saturday, February 8, 2020 3:15:38 PM GMT+01:00
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 1;
+        genesis.nNonce = 359864;
         nMaturity = 0;
         nLastPOWBlock = 999999999; // PoS complicates Regtest because of timing issues
         nDefaultPort = 32205;
@@ -373,10 +372,10 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256(""));
-            assert(genesis.hashMerkleRoot == uint256(""));
+            assert(hashGenesisBlock == uint256("0x6d5a7dd2335cdf92bbaf11e77d96ef324f50f239bb4d8643c11ada31198cd55d"));
+            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
         }
-        // Regtestnet --- nonce: 12347 time: 1505224800 hash: 0x merklehash: 0x
+// Regtestnet --- nonce: 359864 time: 1581171338 hash: 0x6d5a7dd2335cdf92bbaf11e77d96ef324f50f239bb4d8643c11ada31198cd55d merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
 
         if (regenerate)
             exit(0);
