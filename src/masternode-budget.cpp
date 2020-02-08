@@ -26,7 +26,7 @@ std::vector<CFinalizedBudgetBroadcast> vecImmatureFinalizedBudgets;
 int nSubmittedFinalBudget;
 
 CAmount GetBudgetSystemCollateralAmount(int nHeight) {
-    return 500 * COIN;
+    return 50 * COIN;
 }
 
 int GetBudgetPaymentCycleBlocks()
@@ -907,8 +907,18 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
         return ((nSubsidy / 100) * 10) * 146;
     }
 
-    if (nHeight > 200 && nHeight <= 96514012) {
-        return 4 * COIN * 2160 * 14;
+    if (nHeight > 250 && nHeight <= 500000) {
+        return 0.1 * COIN * 1440 * 14;
+    } else if (nHeight > 500001 && nHeight <= 1000000) {
+        return 0.05 * COIN * 1440 * 14;
+    } else if (nHeight > 1000001 && nHeight <= 1500000) {
+        return 0.025 * COIN * 1440 * 14;
+    }  else if (nHeight > 1500001 && nHeight <= 2000000) {
+        return 0.0125 * COIN * 1440 * 14;
+    } else if (nHeight > 2000001 && nHeight <= 2500000) {
+        return 0.00625 * COIN * 1440 * 14;
+    } else if (nHeight > 2500001 && nHeight <= 3000000) {
+        return 0.003125 * COIN * 1440 * 14;
     }
     return 0;
 }
@@ -930,7 +940,7 @@ void CBudgetManager::NewBlock()
     // incremental sync with our peers
     if (masternodeSync.IsSynced()) {
         LogPrint("mnbudget","CBudgetManager::NewBlock - incremental sync started\n");
-        if (chainActive.Height() % 2160 == rand() % 2160) {
+        if (chainActive.Height() % 1440 == rand() % 1440) {
             ClearSeen();
             ResetSync();
         }
