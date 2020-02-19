@@ -38,11 +38,10 @@
 #include "proposallist.h"
 
 #include <iostream>
-
+#include <QDesktopServices>
 #include <QAction>
 #include <QApplication>
 #include <QDateTime>
-#include <QDesktopServices>						   
 #include <QDesktopWidget>
 #include <QDragEnterEvent>
 #include <QIcon>
@@ -106,7 +105,8 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             openAction(0),
                                                                             showHelpMessageAction(0),
                                                                             multiSendAction(0),
-                                                                            proposalAction(0),                                                                            trayIcon(0),
+                                                                            proposalAction(0),
+																			trayIcon(0),			
                                                                             trayIconMenu(0),
                                                                             notificator(0),
                                                                             rpcConsole(0),
@@ -382,6 +382,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     quitAction->setStatusTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
+
 	// create new menu for extras							  
     aboutAction = new QAction(networkStyle->getAppIcon(), tr("&About BARE Coin"), this);
     aboutAction->setStatusTip(tr("Show information about BARE Coin"));
@@ -389,7 +390,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     showWebsiteAction = new QAction(QIcon(":/icons/browse"), tr("BARE Website"), this);
     showExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("BARE Explorer"), this);
 	showCrexAction = new QAction(QIcon(":/icons/crex"), tr("Crex 24 Market BARE/BTC"), this);
-	showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("CoinGecko BARE"), this);																					   
+	showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("CoinGecko BARE"), this);	
 
 #if QT_VERSION < 0x050000
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -475,6 +476,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     connect(showExplorerAction, SIGNAL(triggered()), this, SLOT(ExplorerClicked()));
     connect(showCrexAction, SIGNAL(triggered()), this, SLOT(CrexClicked()));
     connect(showCoingeckoAction, SIGNAL(triggered()), this, SLOT(CoingeckoClicked()));
+ 
 #ifdef ENABLE_WALLET
     if (walletFrame) {
         connect(encryptWalletAction, SIGNAL(triggered(bool)), walletFrame, SLOT(encryptWallet(bool)));
@@ -493,6 +495,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
         connect(multisigSpendAction, SIGNAL(triggered()), this, SLOT(gotoMultisigSpend()));
         connect(multisigSignAction, SIGNAL(triggered()), this, SLOT(gotoMultisigSign()));
     }
+	
 #endif // ENABLE_WALLET
 }
 
@@ -550,18 +553,19 @@ void BitcoinGUI::createMenuBar()
         tools->addAction(openBlockExplorerAction);
     }
 
-    QMenu* help = appMenuBar->addMenu(tr("&Help"));
-    help->addAction(showHelpMessageAction);
-    help->addSeparator();
-    help->addAction(aboutAction);
-    help->addAction(aboutQtAction);
-	
 	QMenu* bare = appMenuBar->addMenu(tr("&Bare Network"));
 	bare->addAction(showWebsiteAction);
 	bare->addAction(showExplorerAction);
 	bare->addSeparator();
 	bare->addAction(showCrexAction);
 	bare->addAction(showCoingeckoAction);
+
+    QMenu* help = appMenuBar->addMenu(tr("&Help"));
+    help->addAction(showHelpMessageAction);
+    help->addSeparator();
+    help->addAction(aboutAction);
+    help->addAction(aboutQtAction);
+	
 }
 
 void BitcoinGUI::createToolBars()
@@ -789,7 +793,7 @@ void BitcoinGUI::aboutClicked()
 
 void BitcoinGUI::WebsiteClicked()
 {
-    QString link = "https://www.bare.network";
+    QString link = "https://bare.network";
     QDesktopServices::openUrl(QUrl(link));
 }
 
