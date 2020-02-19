@@ -378,7 +378,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(proposalAction);
 
-    quitAction = new QAction(QIcon(":/icons/quit"), tr("E&xit"), this);
+    quitAction = new QAction(QIcon(":/icons/quit"), tr("&Exit"), this);
     quitAction->setStatusTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
@@ -387,10 +387,10 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     aboutAction = new QAction(networkStyle->getAppIcon(), tr("&About BARE Coin"), this);
     aboutAction->setStatusTip(tr("Show information about BARE Coin"));
     aboutAction->setMenuRole(QAction::AboutRole);
-    showWebsiteAction = new QAction(QIcon(":/icons/browse"), tr("BARE Website"), this);
-    showExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("BARE Explorer"), this);
-	showCrexAction = new QAction(QIcon(":/icons/crex"), tr("Crex 24 Market BARE/BTC"), this);
-	showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("CoinGecko BARE"), this);	
+    showWebsiteAction = new QAction(QIcon(":/icons/browse"), tr("&BARE Website"), this);
+    showExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("&BARE Explorer"), this);
+	showCrexAction = new QAction(QIcon(":/icons/crex"), tr("&Crex 24 Market BARE/BTC"), this);
+	showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("&CoinGecko BARE"), this);	
 
 #if QT_VERSION < 0x050000
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
