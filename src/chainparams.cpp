@@ -169,8 +169,8 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x683cae43fabf1bf30e9296bb49ffca12ad89830d550541386c9e8549ababa0bf"));
-            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
+            assert(hashGenesisBlock == uint256("683cae43fabf1bf30e9296bb49ffca12ad89830d550541386c9e8549ababa0bf"));
+            assert(genesis.hashMerkleRoot == uint256("4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
         }
 // Mainnet --- nonce: 243605 time: 1581171336 hash: 0x683cae43fabf1bf30e9296bb49ffca12ad89830d550541386c9e8549ababa0bf merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
 
@@ -272,8 +272,8 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x0a0ebf26a17ac734ee5079dbfbcdf03f55fde1f98b2c420553f2c2f7b2c51cf6"));
-            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
+            assert(hashGenesisBlock == uint256("0a0ebf26a17ac734ee5079dbfbcdf03f55fde1f98b2c420553f2c2f7b2c51cf6"));
+            assert(genesis.hashMerkleRoot == uint256("4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
         }
 // Testnet --- nonce: 274266 time: 1581171337 hash: 0x0a0ebf26a17ac734ee5079dbfbcdf03f55fde1f98b2c420553f2c2f7b2c51cf6 merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
 
@@ -372,8 +372,8 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x6d5a7dd2335cdf92bbaf11e77d96ef324f50f239bb4d8643c11ada31198cd55d"));
-            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
+            assert(hashGenesisBlock == uint256("6d5a7dd2335cdf92bbaf11e77d96ef324f50f239bb4d8643c11ada31198cd55d"));
+            assert(genesis.hashMerkleRoot == uint256("4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
         }
 // Regtestnet --- nonce: 359864 time: 1581171338 hash: 0x6d5a7dd2335cdf92bbaf11e77d96ef324f50f239bb4d8643c11ada31198cd55d merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
 
