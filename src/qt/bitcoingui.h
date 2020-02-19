@@ -129,8 +129,12 @@ private:
     QAction* openBlockExplorerAction;
     QAction* showHelpMessageAction;
     QAction* multiSendAction;
-    QAction *proposalAction;
-
+    QAction* proposalAction;
+    QAction* showWebsiteAction;
+    QAction* showExplorerAction;
+	QAction* showCrexAction;
+    QAction* showCoingeckoAction;
+	
     QSystemTrayIcon* trayIcon;
     QMenu* trayIconMenu;
     Notificator* notificator;
@@ -238,6 +242,15 @@ private slots:
     void aboutClicked();
     /** Show help message dialog */
     void showHelpMessageClicked();
+	/** Open BARE Website */
+	void WebsiteClicked();
+	/** Open BARE Explorer */
+	void ExplorerClicked();
+	/** Open CREX24 BARE/BTC market */
+	void CrexClicked();
+	/** Open CoinGecko/en/coins/BARE */
+	void CoingeckoClicked();
+	
 #ifndef Q_OS_MAC
     /** Handle tray icon clicked */
     void trayIconActivated(QSystemTrayIcon::ActivationReason reason);
