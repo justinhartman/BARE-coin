@@ -134,6 +134,8 @@ private:
     QAction* showExplorerAction;
 	QAction* showCrexAction;
     QAction* showCoingeckoAction;
+	QAction* showBareplatformAction;
+	QAction* showMnCommunityAction;
 	
     QSystemTrayIcon* trayIcon;
     QMenu* trayIconMenu;
