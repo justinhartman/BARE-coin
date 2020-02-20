@@ -390,7 +390,9 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     showWebsiteAction = new QAction(QIcon(":/icons/browse"), tr("&BARE Website"), this);
     showExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("&BARE Explorer"), this);
 	showCrexAction = new QAction(QIcon(":/icons/crex"), tr("&Crex 24 Market BARE/BTC"), this);
-	showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("&CoinGecko BARE"), this);	
+	showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("&CoinGecko BARE"), this);
+	showBareplatformAction = new QAction(QIcon(":/icons/browse"), tr("&BARE Platform beta"), this);
+	showMnCommunityAction = new QAction(QIcon(":/icons/mnc"), tr("&Masternode.Community"), this);
 
 #if QT_VERSION < 0x050000
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -476,6 +478,8 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     connect(showExplorerAction, SIGNAL(triggered()), this, SLOT(ExplorerClicked()));
     connect(showCrexAction, SIGNAL(triggered()), this, SLOT(CrexClicked()));
     connect(showCoingeckoAction, SIGNAL(triggered()), this, SLOT(CoingeckoClicked()));
+	connect(showBareplatformAction, SIGNAL(triggered()), this, SLOT(BareplatformClicked()));
+    connect(showMnCommunityAction, SIGNAL(triggered()), this, SLOT(MnCommunityClicked()));
  
 #ifdef ENABLE_WALLET
     if (walletFrame) {
@@ -556,9 +560,11 @@ void BitcoinGUI::createMenuBar()
 	QMenu* bare = appMenuBar->addMenu(tr("&Bare Network"));
 	bare->addAction(showWebsiteAction);
 	bare->addAction(showExplorerAction);
+	bare->addAction(showBareplatformAction);
 	bare->addSeparator();
 	bare->addAction(showCrexAction);
 	bare->addAction(showCoingeckoAction);
+	bare->addAction(showMnCommunityAction);
 
     QMenu* help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(showHelpMessageAction);
@@ -814,6 +820,19 @@ void BitcoinGUI::CoingeckoClicked()
     QString link = "https://www.coingecko.com/en/coins/bare";
     QDesktopServices::openUrl(QUrl(link));
 }
+
+void BitcoinGUI::BareplatformClicked()
+{
+    QString link = "https://beta.bare.network";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::MnCommunityClicked()
+{
+    QString link = "https://masternode.community";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
 void BitcoinGUI::showHelpMessageClicked()
 {
     HelpMessageDialog* help = new HelpMessageDialog(this, false);

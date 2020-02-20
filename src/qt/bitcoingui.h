@@ -250,6 +250,10 @@ private slots:
 	void CrexClicked();
 	/** Open CoinGecko/en/coins/BARE */
 	void CoingeckoClicked();
+	/** Open BARE BETA plattform */
+	void BareplatformClicked();
+	/** Open Masternode.Community */
+	void MnCommunityClicked();
 	
 #ifndef Q_OS_MAC
     /** Handle tray icon clicked */
