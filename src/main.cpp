@@ -1616,9 +1616,9 @@ int64_t GetBlockValue(int nHeight)
 {
 	if (nHeight == 0) return 385000 * COIN; // Inital Coins for swap (~384,924.8 v1 BARE). No extra premine.
 
-	if(nHeight > 0 && nHeight <= 250) {
+	if(nHeight > 0 && nHeight <= 500) {
         return 0.1 * COIN;
-	} else if (nHeight > 251 && nHeight <= 500000) {
+	} else if (nHeight > 501 && nHeight <= 500000) {
 		return 1.0 * COIN;
 	} else if (nHeight > 500001 && nHeight <= 1000000) { // Day ~348, Supply ~884,750 BARE
 		return 0.5 * COIN;
