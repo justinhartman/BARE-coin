@@ -31,11 +31,11 @@ CAmount GetBudgetSystemCollateralAmount(int nHeight) {
 
 int GetBudgetPaymentCycleBlocks()
 {
-    // Amount of blocks in a 14 day period of time (using 40 seconds per block) = (14*24*60*60/40)
-    if (Params().NetworkID() == CBaseChainParams::MAIN) return 30240;
+    // Amount of blocks in a 14 day period of time (using 60 seconds per block) = (14*24*60)
+    if (Params().NetworkID() == CBaseChainParams::MAIN) return 20160;
     
     //for testing purposes
-    return 216; //ten times per day
+    return 144; //ten times per day
 }
 
 bool IsBudgetCollateralValid(uint256 nTxCollateralHash, uint256 nExpectedHash, std::string& strError, int64_t& nTime, int& nConf, bool fBudgetFinalization)

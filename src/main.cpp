@@ -93,7 +93,7 @@ bool fAlerts = DEFAULT_ALERTS;
 unsigned int nStakeMinAge = 3 * 60 * 60;
 int64_t nReserveBalance = 0;
 
-/** Fees smaller than this (in uphr) are considered zero fee (for relaying and mining)
+/** Fees smaller than this (in ubare) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  */
@@ -117,7 +117,7 @@ static void CheckBlockIndex();
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "DarkNet Signed Message:\n";
+const string strMessageMagic = "Bare Signed Message:\n";
 
 // Internal stuff
 namespace
