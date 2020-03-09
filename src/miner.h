@@ -29,7 +29,6 @@ void IncrementExtraNonce(CBlock* pblock, const CBlockIndex* pindexPrev, unsigned
 void UpdateTime(CBlockHeader* block, const CBlockIndex* pindexPrev);
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake);
-void ThreadStakeMinter();
 
 extern double dHashesPerSec;
 extern int64_t nHPSTimerStart;
