@@ -1,8 +1,7 @@
-### Developement Version! Don't Use! 
 -------------------------------------------------------------------------------------------------------------------------------
 *** BETA SOFTWARE - USE AT YOUR OWN RISK ***
 
-BARE 2.0
+BARE 2.0 "Cyrill"
 BARE Coin integration/staging repository
 =====================================
 
@@ -36,23 +35,43 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 * Links:
 [Homepage](https://bare.network)
 [Explorer](https://explorer.bare.network)
-[Exchange Crex24](https://crex24.com/exchange/BARE-BTC)
+**Not updated to v2 now** [Exchange Crex24](https://crex24.com/exchange/BARE-BTC)
 
 [Discord](https://discord.gg/HqHutDk)
 [Twitter](https://twitter.com/bare_crypto)
 [BitcoinTalk](https://bitcointalk.org/index.php?topic=5149503)
 
 ## Nodes & ports ##
-dns1.bare.network<br>
-dns2.bare.network<br>
-dns3.bare.network<br>
-dns4.bare.network<br>
+dns01.bare.network<br>
+dns02.bare.network<br>
+dns03.bare.network<br>
+dns04.bare.network<br>
 p2p port : 32201
 
 ## Upcoming Swap wallet balances from BARE 1.1.1.0 wallets into BARE 2.0 wallets ##
 
-Swap info will follow soon!
+> 1. the Discord http://discord.gg/HqHutDk bare-tip#9646 Bot (ID 563686878117756938)
+> - create an account with `+register` 
+> - create an address with `+deposit`
+> - send your coins to that address, after 6 blocks they are shown in balance
+> Thats all. wait till swap is done
+
+> 2. https://masternode.community
+> - login/sign up
+> - goto Wallet / Deposit
+> - click on "+ Generate Address" / "View Address"
+> - send your coins to that address, after 6 blocks they are shown in balance
+> Thats all. wait till swap is done
+
+> 3. https://stackofstake.com/
+> - login/sign up
+> - click on "Deposit" symbol on the right side to get address
+> - send your coins to that address, after 6 blocks they are shown in balance
+> Thats all. wait till swap is done
+
+**Take care all your coins are Matured on Block 400000, so prepare not too late.**
+
+If you miss this, dont worry :) we will swap you manually in lateswap phase
+Only transactions up to and including block 400000 will be processed.
 
 For support, please don't hesitate to join us in our chat platform at http://discord.gg/HqHutDk
-
-*Only transactions up to and including block 400000 will be processed
