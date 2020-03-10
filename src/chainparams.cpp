@@ -4,7 +4,7 @@
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2017-2018 The Phore developers
 // Copyright (c) 2018-2019 The Monetaryunit developers
-// Copyright (c) 2020 The Bare developers									 
+// Copyright (c) 2020 The Bare developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -57,18 +57,18 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("42d94472a8c94ca2b3fbb1504619163e95d72dc81482e5ebb86e53f46add9468"));
+    (     0, uint256("39845b248214c1d8ea8eaebba5be290f5504c4dd21144e2f3c13066241514879"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1581171336, // * UNIX timestamp of last checkpoint block
+    1583874000, // * UNIX timestamp of last checkpoint block
     0,     // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1440        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0b26680c79e5071ef683644a8b43aee519ee4805c992dfef343bd100363c15bc"));
+    boost::assign::map_list_of(0, uint256("554ec25d2f508143b7b137727a0f04052c405b01a1e3a2a42eebf943c316266d"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1581171337,
@@ -76,7 +76,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("39bfce562ec1440fee65b307348a776a0468d09509f9c9e2f12754af62c1b87f"));
+    boost::assign::map_list_of(0, uint256("6a7fd108b4ef0aab9ce43734d66a04dc83ac4c49a5b3a3e23387dbfcdcaca765"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1581171338,
@@ -112,7 +112,7 @@ public:
         nTargetSpacing = 1 * 60;  // BARE: 60 seconds
         nMaturity = 50;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 1400000 * COIN;
+        nMaxMoneyOut = 1410000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 500;
@@ -128,7 +128,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "BARE v2, The Adult Coin - Bitcoin Block 615106 - 0000000000000000000f299cc380c3d4d0acdd63c41a626f13de2127602052a0";
+        const char* pszTimestamp = "BARE v2, The Adult Coin - Bitcoin Block 621074 - 000000000000000000020f62ea032afcca69a64f1e012f63a1a1aa9a486d1e66";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -138,7 +138,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1581171336; // Saturday, February 8, 2020 3:15:36 PM GMT+01:00
+        genesis.nTime = 1583874000; // Tuesday, March 10, 2020 9:00:00 PM GMT
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 1;
 
@@ -168,15 +168,16 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x42d94472a8c94ca2b3fbb1504619163e95d72dc81482e5ebb86e53f46add9468"));
-            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
+            assert(hashGenesisBlock == uint256("0x39845b248214c1d8ea8eaebba5be290f5504c4dd21144e2f3c13066241514879"));
+            assert(genesis.hashMerkleRoot == uint256("0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb"));
         }
-// Mainnet --- nonce: 1 time: 1581171336 hash: 0x42d94472a8c94ca2b3fbb1504619163e95d72dc81482e5ebb86e53f46add9468 merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
 
-        vSeeds.push_back(CDNSSeedData("dns1", "v2dns1.bare.network"));
-        vSeeds.push_back(CDNSSeedData("dns2", "v2dns2.bare.network"));
-        vSeeds.push_back(CDNSSeedData("dns3", "v2dns3.bare.network"));
-        vSeeds.push_back(CDNSSeedData("dns4", "v2dns4.bare.network"));
+// Mainnet --- nonce: 1 time: 1583874000 hash: 0x39845b248214c1d8ea8eaebba5be290f5504c4dd21144e2f3c13066241514879 merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
+
+        vSeeds.push_back(CDNSSeedData("dns1", "dns01.bare.network"));
+        vSeeds.push_back(CDNSSeedData("dns2", "dns02.bare.network"));
+        vSeeds.push_back(CDNSSeedData("dns3", "dns03.bare.network"));
+        vSeeds.push_back(CDNSSeedData("dns4", "dns04.bare.network"));
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 25);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 110);
@@ -242,7 +243,7 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1581171337; // Saturday, February 8, 2020 3:15:37 PM GMT+01:00
-        genesis.nNonce = 3;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
@@ -271,10 +272,11 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x0b26680c79e5071ef683644a8b43aee519ee4805c992dfef343bd100363c15bc"));
-            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
+            assert(hashGenesisBlock == uint256("0x554ec25d2f508143b7b137727a0f04052c405b01a1e3a2a42eebf943c316266d"));
+            assert(genesis.hashMerkleRoot == uint256("0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb"));
         }
-// Testnet --- nonce: 3 time: 1581171337 hash: 0x0b26680c79e5071ef683644a8b43aee519ee4805c992dfef343bd100363c15bc merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
+
+// Testnet --- nonce: 0 time: 1581171337 hash: 0x554ec25d2f508143b7b137727a0f04052c405b01a1e3a2a42eebf943c316266d merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -371,10 +373,11 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x39bfce562ec1440fee65b307348a776a0468d09509f9c9e2f12754af62c1b87f"));
-            assert(genesis.hashMerkleRoot == uint256("0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af"));
+            assert(hashGenesisBlock == uint256("0x6a7fd108b4ef0aab9ce43734d66a04dc83ac4c49a5b3a3e23387dbfcdcaca765"));
+            assert(genesis.hashMerkleRoot == uint256("0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb"));
         }
-// Regtestnet --- nonce: 1 time: 1581171338 hash: 0x39bfce562ec1440fee65b307348a776a0468d09509f9c9e2f12754af62c1b87f merklehash: 0x4684279fb11b30f11435f55fbd05f726ac99f8a464dc868fabe92f93205b25af
+
+// Regtestnet --- nonce: 1 time: 1581171338 hash: 0x6a7fd108b4ef0aab9ce43734d66a04dc83ac4c49a5b3a3e23387dbfcdcaca765 merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
 
         if (regenerate)
             exit(0);
