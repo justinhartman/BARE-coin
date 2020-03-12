@@ -96,11 +96,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x42;
+        pchMessageStart[0] = 0x25;
         pchMessageStart[1] = 0x65;
         pchMessageStart[2] = 0x72;
         pchMessageStart[3] = 0x34;
-        vAlertPubKey = ParseHex("04f08eddd8cf99a531f4039117c41f478a25144f606c034e1f34647c1b4de4a677742a97c910f21fb04112361081ad408e770bee93a9befcf93b712a1c2e005f29");
+        vAlertPubKey = ParseHex("049b05fb76f93490f9dd674f56de07cd2535b4ce83d4da4c6a1a0ee0097f0bef396676faa800892bf9b58a9e058c4cffac6dfbd5bc4a57ca1b632dd694e901884f");
         nDefaultPort = 32201;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nMaxReorganizationDepth = 100;
@@ -200,8 +200,8 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04d6cdb3e8767bf9f049136eb747123e90106cad04a724727883c431fbcc9dbaf8cf93150d6a0bec49f91382d0683ebf9ccbe7f7790ffe342f3673dd532ba8d9f1";
-        strSporkKeyTemp = "04d6cdb3e8767bf9f049136eb747123e90106cad04a724727883c431fbcc9dbaf8cf93150d6a0bec49f91382d0683ebf9ccbe7f7790ffe342f3673dd532ba8d9f1";
+        strSporkKey = "046435c235ffda1ecc1da253daeed0e243d4b7f614fcfd41182966bd7c5fa9f05983daca3d601b6b7b532b650bacdb95fea20e7f87f71066d371abfeea695e6581";
+        strSporkKeyTemp = "046435c235ffda1ecc1da253daeed0e243d4b7f614fcfd41182966bd7c5fa9f05983daca3d601b6b7b532b650bacdb95fea20e7f87f71066d371abfeea695e6581";
         strObfuscationPoolDummyAddress = "3DTqUSTVYwozbzzxSmSnZyUNWCgoGLZ3FE9v7E5ajmgraTbWyb";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
     }
