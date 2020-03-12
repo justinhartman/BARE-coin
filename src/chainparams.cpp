@@ -138,7 +138,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1583874000; // Tuesday, March 10, 2020 9:00:00 PM GMT
+        genesis.nTime = 1584005050; // Thursday, March 12, 2020 9:24:10 AM GMT
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 1;
 
