@@ -128,8 +128,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     LogPrintf("CreateNewBlock() : chainActive.Height() = %s \n", chainActive.Height());
     if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
-      //txNew.vout[0].SetEmpty();
-	  txNew.vout[0].nValue = GetBlockValue(prev->nHeight+1);
+      txNew.vout[0].SetEmpty();
     }
     
     txNew.vout[0].scriptPubKey = scriptPubKeyIn;
