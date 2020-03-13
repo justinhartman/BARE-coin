@@ -57,11 +57,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("11f804cf8f209414e719b5231302f1aa467220b4559551b0134b44b338ba6c6f"));
+    (     0, uint256("3562f7742a932ef8dbfcf9f9dbe2a583f9b5aafba653736e0f930ab37ecb6d5a"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1584005050, // * UNIX timestamp of last checkpoint block
+    1584117573, // * UNIX timestamp of last checkpoint block
     0,     // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1440        // * estimated number of transactions per day after checkpoint
@@ -100,7 +100,7 @@ public:
         pchMessageStart[1] = 0x65;
         pchMessageStart[2] = 0x72;
         pchMessageStart[3] = 0x34;
-        vAlertPubKey = ParseHex("049b05fb76f93490f9dd674f56de07cd2535b4ce83d4da4c6a1a0ee0097f0bef396676faa800892bf9b58a9e058c4cffac6dfbd5bc4a57ca1b632dd694e901884f");
+        vAlertPubKey = ParseHex("044bcdbe70298b5521ca91a85b97f95212f123b3b68afc8b1903d24e98537f0a824db22b41345b29e81d266c24437382c19cc27191049c2473c9f500f9addd6a41");
         nDefaultPort = 32201;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nMaxReorganizationDepth = 100;
@@ -138,9 +138,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1584005050; // Thursday, March 12, 2020 9:24:10 AM GMT
+        genesis.nTime = 1584117573; // Thursday, March 12, 2020 9:24:10 AM GMT
         genesis.nBits = 0x207fffff;;
-        genesis.nNonce = 1;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
@@ -168,11 +168,11 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x11f804cf8f209414e719b5231302f1aa467220b4559551b0134b44b338ba6c6f"));
+            assert(hashGenesisBlock == uint256("0x3562f7742a932ef8dbfcf9f9dbe2a583f9b5aafba653736e0f930ab37ecb6d5a"));
             assert(genesis.hashMerkleRoot == uint256("0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb"));
         }
 
-// Mainnet --- nonce: 1 time: 1584005050 hash: 0x11f804cf8f209414e719b5231302f1aa467220b4559551b0134b44b338ba6c6f merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
+// Mainnet --- nonce: 0 time: 1584117573 hash: 0x3562f7742a932ef8dbfcf9f9dbe2a583f9b5aafba653736e0f930ab37ecb6d5a merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
 
         vSeeds.push_back(CDNSSeedData("dns1", "dns01.bare.network"));
         vSeeds.push_back(CDNSSeedData("dns2", "dns02.bare.network"));
@@ -200,9 +200,9 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "046435c235ffda1ecc1da253daeed0e243d4b7f614fcfd41182966bd7c5fa9f05983daca3d601b6b7b532b650bacdb95fea20e7f87f71066d371abfeea695e6581";
-        strSporkKeyTemp = "046435c235ffda1ecc1da253daeed0e243d4b7f614fcfd41182966bd7c5fa9f05983daca3d601b6b7b532b650bacdb95fea20e7f87f71066d371abfeea695e6581";
-        strObfuscationPoolDummyAddress = "3DTqUSTVYwozbzzxSmSnZyUNWCgoGLZ3FE9v7E5ajmgraTbWyb";
+        strSporkKey = "048a6bf259eac7886037b9daad4d43856eeab0c1408671436f1f24a067d8dadf79ef721f0eb053b5444e01932387e2c6c03466bf0dbbdeba84302434fd3e28b077";
+        strSporkKeyTemp = "048a6bf259eac7886037b9daad4d43856eeab0c1408671436f1f24a067d8dadf79ef721f0eb053b5444e01932387e2c6c03466bf0dbbdeba84302434fd3e28b077";
+        strObfuscationPoolDummyAddress = "BPTA3JSwXuzHWs56xU7v1ezAWoBFeYXmKV";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
     }
 
