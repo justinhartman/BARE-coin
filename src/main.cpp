@@ -1615,7 +1615,7 @@ double ConvertBitsToDouble(unsigned int nBits)
 int64_t GetBlockValue(int nHeight)
 {
 		 if (nHeight == 	   1) 						   return     385000 * COIN;   // Inital Coins for swap (~384,924.8 v1 BARE). No extra premine.
-		 if (nHeight >=        1 && nHeight <= 	    500) { return        0.1 * COIN; } 
+		 if (nHeight >=        2 && nHeight <= 	    500) { return        0.1 * COIN; } 
 	else if (nHeight >=      501 && nHeight <=   500000) { return        1.0 * COIN; } 
 	else if (nHeight >=   500001 && nHeight <=  1000000) { return        0.5 * COIN; } // Day  ~348, Supply   ~884,750 BARE
 	else if (nHeight >=  1000001 && nHeight <=  1500000) { return       0.25 * COIN; } // Day  ~695, Supply ~1,134,750 BARE
