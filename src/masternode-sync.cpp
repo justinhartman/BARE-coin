@@ -240,18 +240,10 @@ void CMasternodeSync::Process()
         /* 
             Resync if we lose all masternodes from sleep/wake or failure to sync originally
         */
-
-        TRY_LOCK(cs_main, lockMain);
-        if (!lockMain) return false;
-
-        CBlockIndex* pindex = chainActive.Tip();
-        if (pindex == NULL) return false;
-
-        if (pindex->nHeight >= Params().LAST_POW_BLOCK() && mnodeman.CountEnabled() == 0) {
+        if (mnodeman.CountEnabled() == 0) {
             Reset();
-        } else {
+        } else
             return;
-        }
     }
 
     //try syncing again
