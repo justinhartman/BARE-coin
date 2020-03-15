@@ -57,11 +57,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("248daea97ec83a30366a3c2f5fb417aede6c14341314a25cb4fd73940879e12a"));
+    (     0, uint256("30ef80527cafd9e8685412f85e30efc2ffbfa15398c2852fe5ba0ace7f6cb741"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1584186883, // * UNIX timestamp of last checkpoint block
+    1584227334, // * UNIX timestamp of last checkpoint block
     0,     // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1440        // * estimated number of transactions per day after checkpoint
@@ -138,7 +138,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1584186883; // Thursday, March 12, 2020 9:24:10 AM GMT
+        genesis.nTime = 1584227334; // Saturday, March 14, 2020 11:08:54 PM GMT
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 0;
 
@@ -168,11 +168,11 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x248daea97ec83a30366a3c2f5fb417aede6c14341314a25cb4fd73940879e12a"));
+            assert(hashGenesisBlock == uint256("0x30ef80527cafd9e8685412f85e30efc2ffbfa15398c2852fe5ba0ace7f6cb741"));
             assert(genesis.hashMerkleRoot == uint256("0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb"));
         }
 
-// Mainnet --- nonce: 0 time: 1584186883 hash: 0x248daea97ec83a30366a3c2f5fb417aede6c14341314a25cb4fd73940879e12a merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
+// Mainnet --- nonce: 0 time: 1584227334 hash: 0x30ef80527cafd9e8685412f85e30efc2ffbfa15398c2852fe5ba0ace7f6cb741 merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
 
         vSeeds.push_back(CDNSSeedData("dns1", "dns01.bare.network"));
         vSeeds.push_back(CDNSSeedData("dns2", "dns02.bare.network"));
