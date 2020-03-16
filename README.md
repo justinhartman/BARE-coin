@@ -35,7 +35,7 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 * Links:
 [Homepage](https://bare.network)
 [Explorer](https://explorer.bare.network)
-**Not updated to v2 now** [Exchange Crex24](https://crex24.com/exchange/BARE-BTC)
+[Exchange Crex24](https://crex24.com/exchange/BARE-BTC) **Not updated to v2 now** 
 
 [Discord](https://discord.gg/HqHutDk)
 [Twitter](https://twitter.com/bare_crypto)
