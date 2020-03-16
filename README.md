@@ -33,13 +33,13 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 [Client Binaries](https://github.com/BareCrypto/BARE-coin/releases)
 [Source Code](https://github.com/BareCrypto/BARE-coin)
 * Links:
-[Homepage](https://bare.network)
-[Explorer](https://explorer.bare.network)
-[Exchange Crex24](https://crex24.com/exchange/BARE-BTC) **Not updated to v2 now** 
+[Homepage](https://bare.network)<br>
+[Explorer](https://explorer.bare.network)<br>
+[Exchange Crex24](https://crex24.com/exchange/BARE-BTC) **Not updated to v2 now** <br>
 
-[Discord](https://discord.gg/HqHutDk)
-[Twitter](https://twitter.com/bare_crypto)
-[BitcoinTalk](https://bitcointalk.org/index.php?topic=5149503)
+[Discord](https://discord.gg/HqHutDk)<br>
+[Twitter](https://twitter.com/bare_crypto)<br>
+[BitcoinTalk](https://bitcointalk.org/index.php?topic=5149503)<br>
 
 ## Nodes & ports ##
 dns01.bare.network<br>
