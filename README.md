@@ -25,23 +25,23 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 
 <table>
 <th>Block Height</th><th>Reward</th><th>Masternodes</th><th>Stakers</th><th>Budget</th>
-<th>                  1</th><th> 385,000.0 BARE</th><th>0</th><th>0</th><th>PREMINE</th>
-<th>       2 -      500</th><th>0.10000000 BARE</th><th>0</th><th>0</th><th>POW</th>
-<th>     501 -   500000</th><th>1.00000000 BARE</th><th>70%</th><th>~30%</th><th>     0.1</th>
-<th>  500001 -  1000000</th><th>0.50000000 BARE</th><th>70%</th><th>~30%</th><th>    0.05</th>
-<th> 1000001 -  1500000</th><th>0.25000000 BARE</th><th>70%</th><th>~30%</th><th>   0.025</th>
-<th> 1500001 -  2000000</th><th>0.12500000 BARE</th><th>70%</th><th>~30%</th><th>  0.0125</th>
-<th> 2000001 -  2500000</th><th>0.06250000 BARE</th><th>70%</th><th>~30%</th><th> 0.00625</th>
-<th> 2500001 -  3000000</th><th>0.03125000 BARE</th><th>70%</th><th>~30%</th><th>0.003125</th>
-<th> 3000001 -  4000000</th><th>0.01562500 BARE</th><th>70%</th><th>~30%</th><th>0</th>
-<th> 4000001 -  5000000</th><th>0.00781250 BARE</th><th>70%</th><th>~30%</th><th>0</th>
-<th> 5000001 -  6000000</th><th>0.00390625 BARE</th><th>70%</th><th>~30%</th><th>0</th>
-<th> 6000001 -  7000000</th><th>0.00195313 BARE</th><th>70%</th><th>~30%</th><th>0</th>
-<th> 7000001 -  8000000</th><th>0.00097656 BARE</th><th>70%</th><th>~30%</th><th>0</th>
-<th> 8000001 -  9000000</th><th>0.00048828 BARE</th><th>70%</th><th>~30%</th><th>0</th>
-<th> 9000001 - 10000000</th><th>0.00024414 BARE</th><th>70%</th><th>~30%</th><th>0</th>
-<th>10000001 - 11000000</th><th>0.00012207 BARE</th><th>70%</th><th>~30%</th><th>0</th>
-<th>11000001 -  endless</th><th>0.00006104 BARE</th><th>70%</th><th>~30%</th><th>0</th>
+<tr><td>                  1</td><td> 385,000.0 BARE</td><td>0</td><td>0</td><td>PREMINE</td>
+<tr><td>       2 -      500</td><td>0.10000000 BARE</td><td>0</td><td>0</td><td>POW</td>
+<tr><td>     501 -   500000</td><td>1.00000000 BARE</td><td>70%</td><td>~30%</td><td>     0.1</td>
+<tr><td>  500001 -  1000000</td><td>0.50000000 BARE</td><td>70%</td><td>~30%</td><td>    0.05</td>
+<tr><td> 1000001 -  1500000</td><td>0.25000000 BARE</td><td>70%</td><td>~30%</td><td>   0.025</td>
+<tr><td> 1500001 -  2000000</td><td>0.12500000 BARE</td><td>70%</td><td>~30%</td><td>  0.0125</td>
+<tr><td> 2000001 -  2500000</td><td>0.06250000 BARE</td><td>70%</td><td>~30%</td><td> 0.00625</td>
+<tr><td> 2500001 -  3000000</td><td>0.03125000 BARE</td><td>70%</td><td>~30%</td><td>0.003125</td>
+<tr><td> 3000001 -  4000000</td><td>0.01562500 BARE</td><td>70%</td><td>~30%</td><td>0</td>
+<tr><td> 4000001 -  5000000</td><td>0.00781250 BARE</td><td>70%</td><td>~30%</td><td>0</td>
+<tr><td> 5000001 -  6000000</td><td>0.00390625 BARE</td><td>70%</td><td>~30%</td><td>0</td>
+<tr><td> 6000001 -  7000000</td><td>0.00195313 BARE</td><td>70%</td><td>~30%</td><td>0</td>
+<tr><td> 7000001 -  8000000</td><td>0.00097656 BARE</td><td>70%</td><td>~30%</td><td>0</td>
+<tr><td> 8000001 -  9000000</td><td>0.00048828 BARE</td><td>70%</td><td>~30%</td><td>0</td>
+<tr><td> 9000001 - 10000000</td><td>0.00024414 BARE</td><td>70%</td><td>~30%</td><td>0</td>
+<tr><td>10000001 - 11000000</td><td>0.00012207 BARE</td><td>70%</td><td>~30%</td><td>0</td>
+<tr><td>11000001 -  endless</td><td>0.00006104 BARE</td><td>70%</td><td>~30%</td><td>0</td>
 
 </table>
 
@@ -64,14 +64,14 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 
 * Services:
 
-> Masternode/Pos Pools:
+> Masternode/Pos Pools:<br>
 [Masternode.Community](https://masternode.community)<br>
 [StackofStake](https://stackofstake.com)<br>
 [Ihostmn](https://ihostmn.com)<br>
 [Nodemasters](https://nodemasters.co.uk)<br>
 [Pecunia platform](https://pecuniaplatform.io)<br>
 
-> Monitors:
+> Monitors:<br>
 [Coingecko](https://coingecko.com/en/coins/bare)<br>
 [Coinpaprika](https://coinpaprika.com/coin/bare-bare)<br>
 [MNRank](https://mnrank.com/coin/BARE)<br>
