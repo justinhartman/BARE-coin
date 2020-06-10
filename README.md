@@ -56,7 +56,7 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 * Links:
 [Homepage](https://bare.network)<br>
 [Explorer](https://explorer.bare.network)<br>
-[Exchange Crex24](https://crex24.com/exchange/BARE-BTC) **Not updated to v2 now** <br>
+[Exchange Crex24](https://crex24.com/exchange/BARE-BTC)<br>
 [Discord](https://discord.gg/HqHutDk)<br>
 [Telegram](https://t.me/joinchat/Ie3kQlS1G-algyWK3LUQGg)
 [Twitter](https://twitter.com/bare_crypto)<br>
@@ -65,7 +65,7 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 * Services:
 
 > Masternode/Pos Pools:<br>
-[Masternode.Community](https://masternode.community)<br>
+[rapid.host](http://rapids.host/) ex masternode.community<br>
 [StackofStake](https://stackofstake.com)<br>
 [Ihostmn](https://ihostmn.com)<br>
 [Nodemasters](https://nodemasters.co.uk)<br>
