@@ -1,14 +1,14 @@
 ---
-name: "bare-rpi2-2.0"
+name: "bare-rpi2-2.0.1"
 enable_cache: true
 suites:
-- "trusty"
+- "bionic"
 architectures:
 - "amd64"
 packages:
 - "curl"
 - "g++-multilib"
-- "git-core"
+- "git"
 - "pkg-config"
 - "autoconf2.13"
 - "libtool"
@@ -18,7 +18,7 @@ packages:
 - "binutils-gold"
 - "ca-certificates"
 - "python"
-reference_datetime: "2015-06-01 00:00:00"
+reference_datetime: "2020-07-07 00:00:00"
 remotes:
 - "url": "https://github.com/BareCrypto/BARE-coin.git"
   "dir": "bare"

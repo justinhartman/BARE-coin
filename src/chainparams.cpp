@@ -57,12 +57,15 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("39845b248214c1d8ea8eaebba5be290f5504c4dd21144e2f3c13066241514879"));
+    (     0, uint256("30ef80527cafd9e8685412f85e30efc2ffbfa15398c2852fe5ba0ace7f6cb741"))
+	( 46028, uint256("d7b8aa83b193e4dfa7ba0b663ee0188a5f29b5a06bda34901c698aa7c7b5c245"))
+	( 95015, uint256("5ef62dd9404ab16a2b810011cd2eead361280a43557945df1d44cf51b8edfc3b"))
+	(151978, uint256("a80a559478d02adc7130d5859dcd9847561c1ab84dd7750ba1a604b817a77c62"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1583874000, // * UNIX timestamp of last checkpoint block
-    0,     // * total number of transactions between genesis and last checkpoint
+    1593458775, // * UNIX timestamp of last checkpoint block
+    312535,     // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1440        // * estimated number of transactions per day after checkpoint
 };
@@ -96,11 +99,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x42;
+        pchMessageStart[0] = 0x25;
         pchMessageStart[1] = 0x65;
         pchMessageStart[2] = 0x72;
         pchMessageStart[3] = 0x34;
-        vAlertPubKey = ParseHex("04f08eddd8cf99a531f4039117c41f478a25144f606c034e1f34647c1b4de4a677742a97c910f21fb04112361081ad408e770bee93a9befcf93b712a1c2e005f29");
+        vAlertPubKey = ParseHex("044bcdbe70298b5521ca91a85b97f95212f123b3b68afc8b1903d24e98537f0a824db22b41345b29e81d266c24437382c19cc27191049c2473c9f500f9addd6a41");
         nDefaultPort = 32201;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nMaxReorganizationDepth = 100;
@@ -138,9 +141,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1583874000; // Tuesday, March 10, 2020 9:00:00 PM GMT
+        genesis.nTime = 1584227334; // Saturday, March 14, 2020 11:08:54 PM GMT
         genesis.nBits = 0x207fffff;;
-        genesis.nNonce = 1;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
         if (regenerate) {
@@ -168,11 +171,11 @@ public:
             LogPrintf(" time: %u\n", genesis.nTime);
             LogPrintf(" hash: 0x%s\n", genesis.GetHash().ToString().c_str());
             LogPrintf(" merklehash: 0x%s\n", genesis.hashMerkleRoot.ToString().c_str());
-            assert(hashGenesisBlock == uint256("0x39845b248214c1d8ea8eaebba5be290f5504c4dd21144e2f3c13066241514879"));
+            assert(hashGenesisBlock == uint256("0x30ef80527cafd9e8685412f85e30efc2ffbfa15398c2852fe5ba0ace7f6cb741"));
             assert(genesis.hashMerkleRoot == uint256("0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb"));
         }
 
-// Mainnet --- nonce: 1 time: 1583874000 hash: 0x39845b248214c1d8ea8eaebba5be290f5504c4dd21144e2f3c13066241514879 merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
+// Mainnet --- nonce: 0 time: 1584227334 hash: 0x30ef80527cafd9e8685412f85e30efc2ffbfa15398c2852fe5ba0ace7f6cb741 merklehash: 0xbfe8624eaa27b3eb3f6258bca5f866147660de77582088229d865399c9d4c3eb
 
         vSeeds.push_back(CDNSSeedData("dns1", "dns01.bare.network"));
         vSeeds.push_back(CDNSSeedData("dns2", "dns02.bare.network"));
@@ -200,9 +203,9 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04d6cdb3e8767bf9f049136eb747123e90106cad04a724727883c431fbcc9dbaf8cf93150d6a0bec49f91382d0683ebf9ccbe7f7790ffe342f3673dd532ba8d9f1";
-        strSporkKeyTemp = "04d6cdb3e8767bf9f049136eb747123e90106cad04a724727883c431fbcc9dbaf8cf93150d6a0bec49f91382d0683ebf9ccbe7f7790ffe342f3673dd532ba8d9f1";
-        strObfuscationPoolDummyAddress = "3DTqUSTVYwozbzzxSmSnZyUNWCgoGLZ3FE9v7E5ajmgraTbWyb";
+        strSporkKey = "048a6bf259eac7886037b9daad4d43856eeab0c1408671436f1f24a067d8dadf79ef721f0eb053b5444e01932387e2c6c03466bf0dbbdeba84302434fd3e28b077";
+        strSporkKeyTemp = "048a6bf259eac7886037b9daad4d43856eeab0c1408671436f1f24a067d8dadf79ef721f0eb053b5444e01932387e2c6c03466bf0dbbdeba84302434fd3e28b077";
+        strObfuscationPoolDummyAddress = "BPTA3JSwXuzHWs56xU7v1ezAWoBFeYXmKV";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
     }
 

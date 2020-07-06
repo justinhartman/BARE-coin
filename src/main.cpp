@@ -1614,41 +1614,23 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
-	if (nHeight == 0) return 385000 * COIN; // Inital Coins for swap (~384,924.8 v1 BARE). No extra premine.
-
-	if(nHeight > 0 && nHeight <= 500) {
-        return 0.1 * COIN;
-	} else if (nHeight > 501 && nHeight <= 500000) {
-		return 1.0 * COIN;
-	} else if (nHeight > 500001 && nHeight <= 1000000) { // Day ~348, Supply ~884,750 BARE
-		return 0.5 * COIN;
-	} else if (nHeight > 1000001 && nHeight <= 1500000) { // Day ~695, Supply ~1,134,750 BARE
-		return 0.25 * COIN;
-	} else if (nHeight > 1500001 && nHeight <= 2000000) { // Day ~1042, Supply ~1,259,750 BARE
-		return 0.125 * COIN;
-	} else if (nHeight > 2000001 && nHeight <= 2500000) { // Day ~1389, Supply ~1,322,250 BARE
-		return 0.0625 * COIN;
-	} else if (nHeight > 2500001 && nHeight <= 3000000) { // Day ~1737, Supply ~1,353,500 BARE
-		return 0.03125 * COIN;
-	} else if (nHeight > 3000001 && nHeight <= 4000000) { // Day ~2084, Supply ~1,369,125 BARE
-		return 0.015625 * COIN;
-	} else if (nHeight > 4000001 && nHeight <= 5000000) { // Day ~2778, Supply ~1,384,750 BARE
-		return 0.0078125 * COIN;
-	} else if (nHeight > 5000001 && nHeight <= 6000000) { // Day ~3473, Supply ~1,392,562 BARE
-		return 0.00390625 * COIN;
-	} else if (nHeight > 6000001 && nHeight <= 7000000) { // Day ~4167, Supply ~1,396,468 BARE
-		return 0.00195313 * COIN;
-	} else if (nHeight > 7000001 && nHeight <= 8000000) { // Day ~4862, Supply ~1,398,421 BARE 
-		return 0.00097656 * COIN;
-	} else if (nHeight > 8000001 && nHeight <= 9000000) { // Day ~5556, Supply ~1,399,398 BARE
-		return 0.00048828 * COIN;
-	} else if (nHeight > 9000001 && nHeight <= 10000000) { // Day ~6250, Supply ~1,399,886 BARE
-		return 0.00024414 * COIN;
-	} else if (nHeight > 10000001 && nHeight <= 11000000) { // Day ~7945, Supply ~1,400,130 BARE
-		return 0.00012207 * COIN;
-    } else if (nHeight > 11000001) { // Day ~7639, Supply ~1,400,252 BARE
-		return 0.00006104 * COIN;
-    }
+		 if (nHeight == 	   1) 						   return     385000 * COIN;   // Inital Coins for swap (~384,924.8 v1 BARE). No extra premine.
+		 if (nHeight >=        2 && nHeight <= 	    500) { return        0.1 * COIN; } 
+	else if (nHeight >=      501 && nHeight <=   500000) { return        1.0 * COIN; } 
+	else if (nHeight >=   500001 && nHeight <=  1000000) { return        0.5 * COIN; } // Day  ~348, Supply   ~884,750 BARE
+	else if (nHeight >=  1000001 && nHeight <=  1500000) { return       0.25 * COIN; } // Day  ~695, Supply ~1,134,750 BARE
+	else if (nHeight >=  1500001 && nHeight <=  2000000) { return      0.125 * COIN; } // Day ~1042, Supply ~1,259,750 BARE	 
+	else if (nHeight >=  2000001 && nHeight <=  2500000) { return     0.0625 * COIN; } // Day ~1389, Supply ~1,322,250 BARE
+	else if (nHeight >=  2500001 && nHeight <=  3000000) { return    0.03125 * COIN; } // Day ~1737, Supply ~1,353,500 BARE
+	else if (nHeight >=  3000001 && nHeight <=  4000000) { return   0.015625 * COIN; } // Day ~2084, Supply ~1,369,125 BARE
+	else if (nHeight >=  4000001 && nHeight <=  5000000) { return  0.0078125 * COIN; } // Day ~2778, Supply ~1,384,750 BARE
+	else if (nHeight >=  5000001 && nHeight <=  6000000) { return 0.00390625 * COIN; } // Day ~3473, Supply ~1,392,562 BARE	
+	else if (nHeight >=  6000001 && nHeight <=  7000000) { return 0.00195313 * COIN; } // Day ~4167, Supply ~1,396,468 BARE
+	else if (nHeight >=  7000001 && nHeight <=  8000000) { return 0.00097656 * COIN; } // Day ~4862, Supply ~1,398,421 BARE
+	else if (nHeight >=  8000001 && nHeight <=  9000000) { return 0.00048828 * COIN; } // Day ~5556, Supply ~1,399,398 BARE
+	else if (nHeight >=  9000001 && nHeight <= 10000000) { return 0.00024414 * COIN; } // Day ~6250, Supply ~1,399,886 BARE 
+	else if (nHeight >= 10000001 && nHeight <= 11000000) { return 0.00012207 * COIN; } // Day ~7945, Supply ~1,400,130 BARE
+	else if (nHeight >= 11000001) 						 { return 0.00006104 * COIN; } // Day ~7639, Supply ~1,400,252 BARE
 	return 0;
 }
 
@@ -2275,7 +2257,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
+    CAmount nExpectedMint = GetBlockValue(pindex->nHeight);
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 
