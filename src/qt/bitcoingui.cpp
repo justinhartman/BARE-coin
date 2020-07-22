@@ -392,7 +392,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 	showCrexAction = new QAction(QIcon(":/icons/crex"), tr("&Crex 24 Market BARE/BTC"), this);
 	showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("&CoinGecko BARE"), this);
 	showBareplatformAction = new QAction(QIcon(":/icons/browse"), tr("&BARE Platform beta"), this);
-	showMnCommunityAction = new QAction(QIcon(":/icons/mnc"), tr("&Masternode.Community"), this);
+	showMnCommunityAction = new QAction(QIcon(":/icons/mnc"), tr("&Rapids.host"), this);
 
 #if QT_VERSION < 0x050000
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);

@@ -64,19 +64,25 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 
 * Services:
 
-> Masternode/Pos Pools:<br>
+> Masternode/Pos Pools & Hostings:<br>
 [rapid.host](http://rapids.host/) ex masternode.community<br>
 [StackofStake](https://stackofstake.com)<br>
 [Ihostmn](https://ihostmn.com)<br>
 [Nodemasters](https://nodemasters.co.uk)<br>
 [Pecunia platform](https://pecuniaplatform.io)<br>
+[NodeZero platform](https://www.nodezeroplatform.com/) / [discord NZO](https://discord.gg/J38DYe7)<br>
+[Harcomia](https://play.google.com/store/apps/details?id=net.harcomiawallet.android) / [discord HCA](https://discord.gg/bXd8APf)<br>
+
 
 > Monitors:<br>
 [Coingecko](https://coingecko.com/en/coins/bare)<br>
 [Coinpaprika](https://coinpaprika.com/coin/bare-bare)<br>
+[Coincodex](https://coincodex.com/crypto/bare/)<br>
 [MNRank](https://mnrank.com/coin/BARE)<br>
 [MNRoi](https://www.mnroi.info/coin/BARE)<br>
-[Masternode Monitor](https://masternode-monitor.online/coin/BARE)
+[Masternode Monitor](https://masternode-monitor.online/coin/BARE)<br>
+[Dextro](https://dextro.io/page/coin/bare)<br>
+
 
 
 ## Nodes & ports ##
