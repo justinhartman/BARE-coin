@@ -16,6 +16,7 @@ BITCOIN_DAEMON_NAME=bared
 BITCOIN_GUI_NAME=bare-qt
 BITCOIN_CLI_NAME=bare-cli
 BITCOIN_TX_NAME=bare-tx
+BITCOIN_WALLET_TOOL_NAME=BARE-wallet
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -81,8 +82,8 @@ AC_PATH_TOOL(RANLIB, ranlib)
 AC_PATH_TOOL(STRIP, strip)
 AC_PATH_TOOL(GCOV, gcov)
 AC_PATH_PROG(LCOV, lcov)
-dnl Python 3.x is supported from 3.4 on (see https://github.com/bitcoin/bitcoin/issues/7893)
-AC_PATH_PROGS([PYTHON], [python3.7 python3.6 python3.5 python3.4 python3 python])
+dnl Python 3.5 is specified in .python-version and should be used if available, see doc/dependencies.md
+AC_PATH_PROGS([PYTHON], [python3.5 python3.6 python3.7 python3.8 python3 python])
 AC_PATH_PROG(GENHTML, genhtml)
 AC_PATH_PROG([GIT], [git])
 AC_PATH_PROG(CCACHE,ccache)
