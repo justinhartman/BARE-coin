@@ -1,5 +1,5 @@
 ---
-name: "bare-aarch64-2.0"
+name: "bare-aarch64-2.0.1"
 enable_cache: true
 suites:
 - "xenial"
