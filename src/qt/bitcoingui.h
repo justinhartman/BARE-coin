@@ -32,7 +32,7 @@ class UnitDisplayStatusBarControl;
 class WalletFrame;
 class WalletModel;
 class MasternodeList;
-class ProposalList;
+//class ProposalList;
 
 class CWallet;
 
@@ -129,7 +129,7 @@ private:
     QAction* openBlockExplorerAction;
     QAction* showHelpMessageAction;
     QAction* multiSendAction;
-    QAction* proposalAction;
+    //QAction* proposalAction;
     QAction* showWebsiteAction;
     QAction* showExplorerAction;
 	QAction* showCrexAction;
@@ -219,7 +219,7 @@ private slots:
     /** Switch to send coins page */
     void gotoSendCoinsPage(QString addr = "");
     /** Switch to proposal page */
-    void gotoProposalPage();
+    //void gotoProposalPage();
 
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
