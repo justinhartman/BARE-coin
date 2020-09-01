@@ -32,7 +32,7 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 > - RPC port: **32202**
 
 ***Client & Source:***
-> [Client Binaries](https://github.com/BareCrypto/BARE-coin/releases) ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/BareCrypto/BARE-coin/v2.0.1.0/total?style=plastic)<br>
+> [Client Binaries](https://github.com/BareCrypto/BARE-coin/releases)<br>
 > [Source Code](https://github.com/BareCrypto/BARE-coin)
 
 ***BARE Platform:***
