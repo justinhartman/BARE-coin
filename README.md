@@ -1,9 +1,9 @@
 ![GitHub Logo](/share/pixmaps/bitcoin16.png) 
-![GitHub All Releases](https://img.shields.io/github/downloads/BareCrypto/BARE-coin/total?style=flat) 
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/BareCrypto/BARE-coin?label=latest%20version&style=flat) 
-![GitHub](https://img.shields.io/github/license/BareCrypto/BARE-coin)
-![Discord](https://img.shields.io/discord/561164955924037637?label=Discord%20chat) 
-![Twitter Follow](https://img.shields.io/twitter/follow/bare_crypto?style=flat) 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/BareCrypto/BARE-coin?label=latest%20version) 
+![Release date](https://img.shields.io/github/release-date/BareCrypto/BARE-coin) 
+![GitHub](https://img.shields.io/github/license/BareCrypto/BARE-coin) 
+[![Discord Chat](https://img.shields.io/discord/561164955924037637.svg?logo=discord)](https://discord.gg/HqHutDk) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/bare_crypto?style=flat)](https://twitter.com/bare_crypto)
 -------------------------------------------------------------------------------------------------------------------------------
 *** BETA SOFTWARE - USE AT YOUR OWN RISK ***
 
@@ -31,9 +31,9 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 > - P2P port: **32201**
 > - RPC port: **32202**
 
-***Client & Source:***
-> [Client Binaries](https://github.com/BareCrypto/BARE-coin/releases)<br>
-> [Source Code](https://github.com/BareCrypto/BARE-coin)
+***Clients:***
+> [Client Binaries](https://github.com/BareCrypto/BARE-coin/releases/latest)<br>
+> [![GitHub Releases](https://img.shields.io/github/downloads/BareCrypto/BARE-coin/latest/total)](https://github.com/BareCrypto/BARE-coin/releases/latest) [![GitHub All Releases](https://img.shields.io/github/downloads/BareCrypto/BARE-coin/total?label=downloads%40all%20releases)](https://github.com/BareCrypto/BARE-coin/releases)<br>
 
 ***BARE Platform:***
 > [Bare platform](https://beta.bare.network) *beta*
