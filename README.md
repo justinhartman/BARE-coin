@@ -1,3 +1,9 @@
+![GitHub Logo](/share/pixmaps/bitcoin16.png) 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/BareCrypto/BARE-coin?label=latest%20version) 
+![Release date](https://img.shields.io/github/release-date/BareCrypto/BARE-coin) 
+![GitHub](https://img.shields.io/github/license/BareCrypto/BARE-coin) 
+[![Discord Chat](https://img.shields.io/discord/561164955924037637.svg?logo=discord)](https://discord.gg/HqHutDk) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/bare_crypto?style=flat)](https://twitter.com/bare_crypto)
 -------------------------------------------------------------------------------------------------------------------------------
 *** BETA SOFTWARE - USE AT YOUR OWN RISK ***
 
@@ -13,13 +19,55 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 
 385000 BARE was produced for swapping 1:1 from BARE v1 to BARE v2
 
-## Coin Specs ##
-<table>
-<tr><td>Hash Type</td><td>SHA256</td></tr>
-<tr><td>Block Time</td><td>60 Seconds</td></tr>
-<tr><td>Difficulty Retargeting</td><td>Every 10 blocks</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>~1,4 million</td></tr>
-</table>
+## BARE resources ##
+
+***Coin specs:***
+> - Coin type : **POS/MN** *fork (Bitcoin/Dash/PiVX/Phore/MonetaryUnit/BARE)*
+> - Hash algo: **SHA256**
+> - Block time: **~60 seconds**
+> - diff re-target: **every 10 blocks**
+> - Max Supply: **~1,400,000 BARE**
+> - Genesis time: **Saturday, March 14, 2020 11:08:54 PM GMT**
+> - P2P port: **32201**
+> - RPC port: **32202**
+
+***Clients:***
+> [Client Binaries](https://github.com/BareCrypto/BARE-coin/releases/latest)<br>
+> [![GitHub Releases](https://img.shields.io/github/downloads/BareCrypto/BARE-coin/latest/total)](https://github.com/BareCrypto/BARE-coin/releases/latest) [![GitHub All Releases](https://img.shields.io/github/downloads/BareCrypto/BARE-coin/total?label=downloads%40all%20releases)](https://github.com/BareCrypto/BARE-coin/releases)<br>
+
+***BARE Platform:***
+> [Bare platform](https://beta.bare.network) *beta*
+
+***Links:***
+> [Homepage](https://bare.network)<br>
+> [Explorer](https://explorer.bare.network)<br>
+> [Discord](https://discord.gg/HqHutDk)<br>
+> [Telegram](https://t.me/joinchat/Ie3kQlS1G-algyWK3LUQGg)<br>
+> [Twitter](https://twitter.com/bare_crypto)<br>
+> [BitcoinTalk](https://bitcointalk.org/index.php?topic=5149503)
+
+***Markets:***
+> [Crex24(BTC)](https://crex24.com/exchange/BARE-BTC)<br>
+> [Altilly(BTC)](https://altilly.com/market/BARE_BTC)<br>
+> [Altilly(XQR)](https://altilly.com/market/BARE_XQR)
+
+***Masternode/Pos Pools & Hostings:***
+> [rapid.host](http://rapids.host/) ex masternode.community<br>
+> [StackofStake](https://stackofstake.com)<br>
+> [Ihostmn](https://ihostmn.com)<br>
+> [Nodemasters](https://nodemasters.co.uk)<br>
+> [Pecunia platform](https://pecuniaplatform.io)<br>
+> [NodeZero platform](https://www.nodezeroplatform.com/) / [discord NZO](https://discord.gg/J38DYe7)<br>
+> [Harcomia](https://play.google.com/store/apps/details?id=net.harcomiawallet.android) / [discord HCA](https://discord.gg/bXd8APf)
+
+***Monitors:***
+> [Coingecko](https://coingecko.com/en/coins/bare)<br>
+> [Coinpaprika](https://coinpaprika.com/coin/bare-bare)<br>
+> [Coincodex](https://coincodex.com/crypto/bare/)<br>
+> [Dextro](https://dextro.io/page/coin/bare)<br>
+> [MNRoi](https://www.mnroi.info/coin/BARE)<br>
+> [MNRank](https://mnrank.com/coin/BARE)<br>
+> [Masternode Monitor](https://masternode-monitor.online/coin/BARE)
 
 ## PoS Rewards Breakdown ##
 
@@ -43,56 +91,9 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 <tr><td>10000001 - 11000000</td><td>0.00012207 BARE</td><td>70%</td><td>~30%</td><td>0</td>
 <tr><td>11000001 -  endless</td><td>0.00006104 BARE</td><td>70%</td><td>~30%</td><td>0</td>
 
-</table>
-
-## BARE resources ##
-* Client & Source:
-[Client Binaries](https://github.com/BareCrypto/BARE-coin/releases)
-[Source Code](https://github.com/BareCrypto/BARE-coin)
-
-* BARE Platform:
-[Bare platform](https://beta.bare.network) *beta*
-
-* Links:
-[Homepage](https://bare.network)<br>
-[Explorer](https://explorer.bare.network)<br>
-[Exchange Crex24](https://crex24.com/exchange/BARE-BTC)<br>
-[Discord](https://discord.gg/HqHutDk)<br>
-[Telegram](https://t.me/joinchat/Ie3kQlS1G-algyWK3LUQGg)
-[Twitter](https://twitter.com/bare_crypto)<br>
-[BitcoinTalk](https://bitcointalk.org/index.php?topic=5149503)<br>
-
-* Services:
-
-> Masternode/Pos Pools & Hostings:<br>
-[rapid.host](http://rapids.host/) ex masternode.community<br>
-[StackofStake](https://stackofstake.com)<br>
-[Ihostmn](https://ihostmn.com)<br>
-[Nodemasters](https://nodemasters.co.uk)<br>
-[Pecunia platform](https://pecuniaplatform.io)<br>
-[NodeZero platform](https://www.nodezeroplatform.com/) / [discord NZO](https://discord.gg/J38DYe7)<br>
-[Harcomia](https://play.google.com/store/apps/details?id=net.harcomiawallet.android) / [discord HCA](https://discord.gg/bXd8APf)<br>
-
-
-> Monitors:<br>
-[Coingecko](https://coingecko.com/en/coins/bare)<br>
-[Coinpaprika](https://coinpaprika.com/coin/bare-bare)<br>
-[Coincodex](https://coincodex.com/crypto/bare/)<br>
-[MNRank](https://mnrank.com/coin/BARE)<br>
-[MNRoi](https://www.mnroi.info/coin/BARE)<br>
-[Masternode Monitor](https://masternode-monitor.online/coin/BARE)<br>
-[Dextro](https://dextro.io/page/coin/bare)<br>
-
-
-
-## Nodes & ports ##
-dns01.bare.network<br>
-dns02.bare.network<br>
-dns03.bare.network<br>
-dns04.bare.network<br>
-p2p port: 32201
-rpc port: 32202
-
+</table><br>
+<br>
+<br>
 ## Swap wallet balances from BARE v1.1.1.0 wallets into BARE v2 wallets ##
 
 Contact Admins in [Discord](https://discord.gg/HqHutDk)<br>

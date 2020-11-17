@@ -2,13 +2,13 @@
 name: "bare-win-2.0.1"
 enable_cache: true
 suites:
-- "bionic"
+- "trusty"
 architectures:
 - "amd64"
 packages:
 - "curl"
 - "g++"
-- "git"
+- "git-core"
 - "pkg-config"
 - "autoconf"
 - "libtool"
@@ -20,8 +20,7 @@ packages:
 - "nsis"
 - "zip"
 - "ca-certificates"
-- "python3"
-- "rename"
+- "python"
 remotes:
 - "url": "https://github.com/BareCrypto/BARE-coin.git"
   "dir": "bare"
@@ -85,7 +84,7 @@ script: |
     done
     for prog in gcc g++; do
         echo '#!/bin/bash' > ${WRAP_DIR}/${i}-${prog}
-        echo "REAL=\`which -a ${i}-${prog}-posix | grep -v ${WRAP_DIR}/${i}-${prog} | head -1\`" >> ${WRAP_DIR}/${i}-${prog}
+        echo "REAL=\`which -a ${i}-${prog} | grep -v ${WRAP_DIR}/${i}-${prog} | head -1\`" >> ${WRAP_DIR}/${i}-${prog}
         echo 'export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1' >> ${WRAP_DIR}/${i}-${prog}
         echo "export FAKETIME=\"$1\"" >> ${WRAP_DIR}/${i}-${prog}
         echo "export COMPILER_PATH=${WRAP_DIR}/${i}" >> ${WRAP_DIR}/${i}-${prog}

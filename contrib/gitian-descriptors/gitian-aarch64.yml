@@ -2,19 +2,19 @@
 name: "bare-aarch64-2.0.1"
 enable_cache: true
 suites:
-- "bionic"
+- "xenial"
 architectures:
 - "amd64"
 packages:
 - "curl"
 - "g++-aarch64-linux-gnu"
-- "g++-8-aarch64-linux-gnu"
-- "gcc-8-aarch64-linux-gnu"
+- "g++-4.9-aarch64-linux-gnu"
+- "gcc-4.9-aarch64-linux-gnu"
 - "binutils-aarch64-linux-gnu"
-- "g++-8-multilib"
-- "gcc-8-multilib"
+- "g++-4.9-multilib"
+- "gcc-4.9-multilib"
 - "binutils-gold"
-- "git"
+- "git-core"
 - "pkg-config"
 - "autoconf"
 - "libtool"
@@ -23,10 +23,10 @@ packages:
 - "bsdmainutils"
 - "ca-certificates"
 - "python"
-reference_datetime: "2020-07-07 00:00:00"
+reference_datetime: "2015-06-01 00:00:00"
 remotes:
 - "url": "https://github.com/BareCrypto/BARE-coin.git"
-  "dir": "barev2"
+  "dir": "bare"
 files: []
 script: |
 
