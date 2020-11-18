@@ -1,9 +1,9 @@
 PACKAGE=qt
 $(package)_version=5.9.7
-$(package)_download_path=https://download.qt.io/official_releases/qt/5.9/$($(package)_version)/submodules
-$(package)_suffix=opensource-src-$($(package)_version).tar.xz
+$(package)_download_path=https://download.qt.io/official_releases/qt/5.9/single/$($(package)_version)/submodules
+$(package)_suffix=qt-everywhere-opensource-src-$($(package)_version).tar.xz
 $(package)_file_name=qtbase-$($(package)_suffix)
-$(package)_sha256_hash=36dd9574f006eaa1e5af780e4b33d11fe39d09fd7c12f3b9d83294174bd28f00
+$(package)_sha256_hash=1c3852aa48b5a1310108382fb8f6185560cefc3802e81ecc099f4e62ee38516c
 $(package)_dependencies=openssl zlib
 $(package)_linux_dependencies=freetype fontconfig libxcb libX11 xproto libXext
 $(package)_build_subdir=qtbase
