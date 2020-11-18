@@ -110,11 +110,11 @@ $(package)_config_opts_linux += -system-freetype
 $(package)_config_opts_linux += -no-feature-sessionmanager
 $(package)_config_opts_linux += -fontconfig
 $(package)_config_opts_linux += -no-opengl
-$(package)_config_opts_arm_linux += -platform linux-g++ -xplatform pivx-linux-g++
+$(package)_config_opts_arm_linux += -platform linux-g++ -xplatform bare-linux-g++
 $(package)_config_opts_i686_linux  = -xplatform linux-g++-32
 $(package)_config_opts_x86_64_linux = -xplatform linux-g++-64
 $(package)_config_opts_aarch64_linux = -xplatform linux-aarch64-gnu-g++
-$(package)_config_opts_riscv64_linux = -platform linux-g++ -xplatform pivx-linux-g++
+$(package)_config_opts_riscv64_linux = -platform linux-g++ -xplatform bare-linux-g++
 $(package)_config_opts_s390x_linux += -platform linux-g++ -xplatform linux-g++-64
 $(package)_config_opts_powerpc_linux += -platform linux-g++ -xplatform linux-g++-32
 $(package)_config_opts_powerpc64le_linux += -platform linux-g++ -xplatform linux-g++-64
@@ -143,15 +143,15 @@ define $(package)_extract_cmds
   echo "$($(package)_qtcharts_sha256_hash)  $($(package)_source_dir)/$($(package)_qtcharts_file_name)" >> $($(package)_extract_dir)/.$($(package)_file_name).hash && \
   $(build_SHA256SUM) -c $($(package)_extract_dir)/.$($(package)_file_name).hash && \
   mkdir qtbase && \
-  tar --no-same-owner --strip-components=1 -xf $($(package)_source) -C qtbase && \
+  tar --strip-components=1 -xf $($(package)_source) -C qtbase && \
   mkdir qttranslations && \
-  tar --no-same-owner --strip-components=1 -xf $($(package)_source_dir)/$($(package)_qttranslations_file_name) -C qttranslations && \
+  tar --strip-components=1 -xf $($(package)_source_dir)/$($(package)_qttranslations_file_name) -C qttranslations && \
   mkdir qttools && \
-  tar --no-same-owner --strip-components=1 -xf $($(package)_source_dir)/$($(package)_qttools_file_name) -C qttools && \
+  tar --strip-components=1 -xf $($(package)_source_dir)/$($(package)_qttools_file_name) -C qttools && \
   mkdir qtsvg && \
-  tar --no-same-owner --strip-components=1 -xf $($(package)_source_dir)/$($(package)_qtsvg_file_name) -C qtsvg && \
+  tar --strip-components=1 -xf $($(package)_source_dir)/$($(package)_qtsvg_file_name) -C qtsvg && \
   mkdir qtcharts && \
-  tar --no-same-owner --strip-components=1 -xf $($(package)_source_dir)/$($(package)_qtcharts_file_name) -C qtcharts
+  tar --strip-components=1 -xf $($(package)_source_dir)/$($(package)_qtcharts_file_name) -C qtcharts
 endef
 
 define $(package)_preprocess_cmds
@@ -172,8 +172,8 @@ define $(package)_preprocess_cmds
   sed -i.old "s|QMAKE_RANLIB=\$$$$\$$$${CROSS_COMPILE}|QMAKE_RANLIB=$(host_prefix)/native/bin/\$$$$\$$$${CROSS_COMPILE}|" qtbase/mkspecs/macx-clang-linux/qmake.conf && \
   sed -i.old "s|QMAKE_LIBTOOL=\$$$$\$$$${CROSS_COMPILE}|QMAKE_LIBTOOL=$(host_prefix)/native/bin/\$$$$\$$$${CROSS_COMPILE}|" qtbase/mkspecs/macx-clang-linux/qmake.conf && \
   sed -i.old "s|QMAKE_INSTALL_NAME_TOOL=\$$$$\$$$${CROSS_COMPILE}|QMAKE_INSTALL_NAME_TOOL=$(host_prefix)/native/bin/\$$$$\$$$${CROSS_COMPILE}|" qtbase/mkspecs/macx-clang-linux/qmake.conf && \
-  cp -r qtbase/mkspecs/linux-arm-gnueabi-g++ qtbase/mkspecs/pivx-linux-g++ && \
-  sed -i.old "s/arm-linux-gnueabi-/$(host)-/g" qtbase/mkspecs/pivx-linux-g++/qmake.conf && \
+  cp -r qtbase/mkspecs/linux-arm-gnueabi-g++ qtbase/mkspecs/bare-linux-g++ && \
+  sed -i.old "s/arm-linux-gnueabi-/$(host)-/g" qtbase/mkspecs/bare-linux-g++/qmake.conf && \
   patch -p1 -i $($(package)_patch_dir)/fix_qt_pkgconfig.patch &&\
   patch -p1 -i $($(package)_patch_dir)/fix_configure_mac.patch &&\
   patch -p1 -i $($(package)_patch_dir)/fix_no_printer.patch &&\
