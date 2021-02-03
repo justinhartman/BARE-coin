@@ -21,6 +21,10 @@ class OverviewPage;
 
 QT_BEGIN_NAMESPACE
 class QModelIndex;
+class QNetworkAccessManager;
+class QNetworkReply;
+class QSslError;
+class QUrl;
 QT_END_NAMESPACE
 
 /** Overview ("home") page widget */
