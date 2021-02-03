@@ -223,6 +223,8 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // Percentage labels
     ui->labelBAREPercent->setText(sPercentage);
+    QNetworkAccessManager *manager = new QNetworkAccessManager(this);
+    QNetworkReply *reply = manager->get (QNetworkRequest (QUrl ("https://api.coingecko.com/api/v3/coins/bare?localization=false")));																   
 
     // Only show most balances if they are non-zero for the sake of simplicity
     QSettings settings;
@@ -350,3 +352,43 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
 }
+//GET Price from Gecko
+void OverviewPage::syncRequestFinished () {
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender ());
+    
+    //market_data / current_price / usd
+
+    if (reply->error() == QNetworkReply::NoError)
+    {
+        QByteArray strReply =  reply->readAll();
+  
+        QJsonDocument jsonResponse = QJsonDocument::fromJson(strReply);
+        if(jsonResponse.isEmpty())
+        {
+            ui->labelPricez->setText("NON");
+            return;
+        }
+        QJsonObject jsonObject = jsonResponse.object();
+
+            QJsonObject sett3 = jsonObject["market_data"].toObject();
+            QJsonDocument doc(sett3);
+            QByteArray strJson(doc.toJson(QJsonDocument::Compact));
+ 
+            QJsonObject sett4 = sett3["current_price"].toObject();
+            QJsonDocument doc1(sett4);
+            QByteArray strJson1(doc1.toJson(QJsonDocument::Compact));
+
+            float priceVal =  sett4["usd"].toVariant().toFloat();
+            float totalBalance = currentBalance/100000000;
+
+            QString unitPrice = QString::number(priceVal) + QString(" USD");
+            QString totalPrice = QString::number(priceVal* totalBalance) + QString(" USD");
+
+            ui->labelPricez->setText(totalPrice);  
+            ui->labelUSDPricez->setText(unitPrice);
+    }    
+    else{
+        ui->labelPricez->setText("NULL");
+    }
+    delete reply;
+}																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												

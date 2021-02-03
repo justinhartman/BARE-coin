@@ -388,6 +388,58 @@
                          </property>
                         </spacer>
                        </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="labelPriceTextz">
+                         <property name="text">
+                          <string>Price:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLabel" name="labelPricez">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="cursor">
+                          <cursorShape>IBeamCursor</cursorShape>
+                         </property>
+                         <property name="toolTip">
+                          <string>Total cost of coins</string>
+                         </property>
+                         <property name="text">
+                          <string>1253.425 USD</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="labelUSDPriceTextz">
+                         <property name="text">
+                          <string>1 BARE:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLabel" name="labelUSDPricez">
+                         <property name="font">
+                          <font>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="cursor">
+                         <cursorShape>IBeamCursor</cursorShape>
+                         </property>
+                         <property name="toolTip">
+                          <string>Cost of 1 BARE coin</string>
+                         </property>
+                         <property name="text">
+                          <string>0.01</string>
+                         </property>
+                        </widget>
+                       </item>	
                       </layout>
                      </item>
                      <item>
