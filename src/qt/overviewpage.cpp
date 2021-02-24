@@ -224,8 +224,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     // Percentage labels
     ui->labelBAREPercent->setText(sPercentage);
     QNetworkAccessManager *manager = new QNetworkAccessManager(this);
-    QNetworkReply *reply = manager->get (QNetworkRequest (QUrl ("https://api.coingecko.com/api/v3/coins/bare?localization=false")));
-    connect (reply, SIGNAL (finished ()), this, SLOT (syncRequestFinished ()));
+    QNetworkReply *reply = manager->get (QNetworkRequest (QUrl ("https://api.coingecko.com/api/v3/coins/bare?localization=false")));																   
 
     // Only show most balances if they are non-zero for the sake of simplicity
     QSettings settings;
