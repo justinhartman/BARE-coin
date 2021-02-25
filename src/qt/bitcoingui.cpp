@@ -8,6 +8,7 @@
 
 #include "bitcoingui.h"
 
+#include "context.h"
 #include "bitcoinunits.h"
 #include "clientmodel.h"
 #include "guiconstants.h"
@@ -20,6 +21,8 @@
 #include "optionsmodel.h"
 #include "rpcconsole.h"
 #include "utilitydialog.h"
+#include "bootstrapdialog.h"
+#include "bootstrap/bootstrapmodel.h"
 
 #ifdef ENABLE_WALLET
 #include "blockexplorer.h"
@@ -111,6 +114,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             notificator(0),
                                                                             rpcConsole(0),
                                                                             explorerWindow(0),
+																			bootstrapWindow(0),
                                                                             prevBlocks(0),
                                                                             spinnerFrame(0)
 {
@@ -149,6 +153,8 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
 #endif
 
     rpcConsole = new RPCConsole(enableWallet ? this : 0);
+	bootstrapWindow = new BootstrapDialog(GetContext().GetBootstrapModel(), this);
+
 #ifdef ENABLE_WALLET
     if (enableWallet) {
         /** Create wallet frame*/
@@ -256,9 +262,12 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
     connect(quitAction, SIGNAL(triggered()), rpcConsole, SLOT(hide()));
 
     connect(openBlockExplorerAction, SIGNAL(triggered()), explorerWindow, SLOT(show()));
+	
+	connect(openBootstrapAction, SIGNAL(triggered()), bootstrapWindow, SLOT(show()));
 
     // prevents an open debug window from becoming stuck/unusable on client shutdown
     connect(quitAction, SIGNAL(triggered()), explorerWindow, SLOT(hide()));
+	connect(quitAction, SIGNAL(triggered()), bootstrapWindow, SLOT(hide()));
 
     // Install event filter to be able to catch status tip events (QEvent::StatusTip)
     this->installEventFilter(this);
@@ -437,6 +446,8 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     openPeersAction->setStatusTip(tr("Show peers info"));
     openRepairAction = new QAction(QIcon(":/icons/options"), tr("Wallet &Repair"), this);
     openRepairAction->setStatusTip(tr("Show wallet repair options"));
+    openBootstrapAction = new QAction(QIcon(":/icons/options"), tr("&Blockchain Bootstrap"), this);
+    openBootstrapAction->setStatusTip(tr("Reload blockchain from the cloud or file"));
     openConfEditorAction = new QAction(QIcon(":/icons/edit"), tr("Open Wallet &Configuration File"), this);
     openConfEditorAction->setStatusTip(tr("Open configuration file"));
     openMNConfEditorAction = new QAction(QIcon(":/icons/edit"), tr("Open &Masternode Configuration File"), this);
@@ -550,6 +561,7 @@ void BitcoinGUI::createMenuBar()
         tools->addAction(openNetworkAction);
         tools->addAction(openPeersAction);
         tools->addAction(openRepairAction);
+        tools->addAction(openBootstrapAction);
         tools->addSeparator();
         tools->addAction(openConfEditorAction);
         tools->addAction(openMNConfEditorAction);
@@ -757,6 +769,7 @@ void BitcoinGUI::createTrayIconMenu()
     trayIconMenu->addAction(openNetworkAction);
     trayIconMenu->addAction(openPeersAction);
     trayIconMenu->addAction(openRepairAction);
+    trayIconMenu->addAction(openBootstrapAction);
     trayIconMenu->addSeparator();
     trayIconMenu->addAction(openConfEditorAction);
     trayIconMenu->addAction(openMNConfEditorAction);
