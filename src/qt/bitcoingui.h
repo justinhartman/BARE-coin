@@ -135,7 +135,7 @@ private:
 	QAction* showCrexAction;
     QAction* showCoingeckoAction;
 	QAction* showBareplatformAction;
-	QAction* showMnCommunityAction;
+	QAction* showRapidshostAction;
 	
     QSystemTrayIcon* trayIcon;
     QMenu* trayIconMenu;
@@ -244,18 +244,18 @@ private slots:
     void aboutClicked();
     /** Show help message dialog */
     void showHelpMessageClicked();
-	/** Open BARE Website */
-	void WebsiteClicked();
-	/** Open BARE Explorer */
-	void ExplorerClicked();
-	/** Open CREX24 BARE/BTC market */
-	void CrexClicked();
+    /** Open BARE Website */
+    void WebsiteClicked();
+    /** Open BARE Explorer */
+    void ExplorerClicked();
+    /** Open CREX24 BARE/BTC market */
+    void CrexClicked();
 	/** Open CoinGecko/en/coins/BARE */
-	void CoingeckoClicked();
-	/** Open BARE BETA plattform */
-	void BareplatformClicked();
-	/** Open Masternode.Community */
-	void MnCommunityClicked();
+    void CoingeckoClicked();
+    /** Open BARE BETA plattform */
+    void BareplatformClicked();
+    /** Open Rapids.host */
+    void RapidshostClicked();
 	
 #ifndef Q_OS_MAC
     /** Handle tray icon clicked */

@@ -61,7 +61,7 @@
         <file alias="crex">res/icons/crex.png</file>
         <file alias="weblink">res/icons/weblink.png</file>
         <file alias="explorer">res/icons/explorer.png</file>
-		<file alias="mnc">res/icons/mnc.png</file>
+		<file alias="rapids">res/icons/rapids.png</file>
     </qresource>
     <qresource prefix="/css">
         <file alias="default">res/css/default.css</file>
