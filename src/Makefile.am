@@ -121,6 +121,7 @@ BITCOIN_CORE_H = \
   consensus/merkle.h \
   consensus/validation.h \
   compressor.h \
+  context.h \
   primitives/block.h \
   primitives/transaction.h \
   core_io.h \
@@ -362,6 +363,7 @@ libbitcoin_util_a_SOURCES = \
   compat/strnlen.cpp \
   compat/glibc_sanity.cpp \
   compat/glibcxx_sanity.cpp \
+  context.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
   random.cpp \
@@ -407,9 +409,10 @@ bared_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
-  $(LIBSECP256K1)
+  $(LIBSECP256K1) \
+  $(LIBMINIZIP)
 
-bared_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+bared_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(CURL_LIBS)
 
 # bare-cli binary #
 bare_cli_SOURCES = bare-cli.cpp
@@ -427,7 +430,7 @@ bare_cli_LDADD = \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-bare_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+bare_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(CURL_LIBS)
 #
 
 # bare-tx binary #
@@ -447,7 +450,7 @@ bare_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-bare_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+bare_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(CURL_LIBS)
 #
 
 # bitcoinconsensus library #
