@@ -213,6 +213,8 @@ public:
         strSporkKeyTemp = "048a6bf259eac7886037b9daad4d43856eeab0c1408671436f1f24a067d8dadf79ef721f0eb053b5444e01932387e2c6c03466bf0dbbdeba84302434fd3e28b077";
         strObfuscationPoolDummyAddress = "BPTA3JSwXuzHWs56xU7v1ezAWoBFeYXmKV";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
+		
+		strBootstrapUrl = "https://bare.network/v2/mainnet"; // location of bare bootstrap file
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -320,6 +322,9 @@ public:
         strObfuscationPoolDummyAddress = "7vRzZ63yCrXCf8C8sXnCuLbLf4L2kemrLkmF4MJp22JVG93VHdi";
         nBudgetFeeConfirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                      // here because we only have a 8 block finalization window on testnet
+		
+		strBootstrapUrl = "https://bare.network/v2/testnet"; // location of bare bootstrap file
+		
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {

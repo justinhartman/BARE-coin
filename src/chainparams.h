@@ -100,6 +100,9 @@ public:
     int ModifierUpgradeBlock() const { return nModifierUpdateBlock; }
     int LAST_POW_BLOCK() const { return nLastPOWBlock; }
 
+	/** BARE only **/
+	std::string GetBootstrapUrl() const { return strBootstrapUrl; };
+	
 protected:
     CChainParams() {}
 
@@ -142,6 +145,9 @@ protected:
     std::string strSporkKeyTemp;
     std::string strObfuscationPoolDummyAddress;
     int64_t nBudgetFeeConfirmations;
+	
+	/** BARE only **/
+	std::string strBootstrapUrl;
 };
 
 /**
