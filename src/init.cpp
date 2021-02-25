@@ -385,6 +385,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-txindex", strprintf(_("Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)"), 0));
     strUsage += HelpMessageOpt("-addrindex", strprintf(_("Maintain a full address index, used by the searchrawtransactions rpc call (default: %u)"), 0));
     strUsage += HelpMessageOpt("-forcestart", _("Attempt to force blockchain corruption recovery") + " " + _("on startup"));
+    strUsage += HelpMessageOpt("-bootstrap=<file>", _("Load blockchain snapshot from bootstrap file, if file is not specified - load from the cloud, cloud is default option"));
 
     strUsage += HelpMessageGroup(_("Connection options:"));
     strUsage += HelpMessageOpt("-addnode=<ip>", _("Add a node to connect to and attempt to keep the connection open"));
@@ -750,6 +751,55 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
         return InitError("Error: Initializing networking failed");
 
     BootstrapModelPtr model = GetContext().GetBootstrapModel();
+
+    // Check if we should run stage I of the blockchain bootstrap
+    if (DefinedArg("-bootstrap")) {
+        InitInformation("Bootstrap option detected, running stage I of bootstrap...");
+        try {
+            std::string err;
+            const std::string bootstrapPath = GetArg("-bootstrap", std::string());
+            if (!bootstrapPath.empty()) {
+                if (!model->SetBootstrapMode(BootstrapMode::file, err)) {
+                    error("%s : %s", __func__, err);
+                    return InitError(err);
+                }
+
+                if (!model->SetBootstrapFilePath(bootstrapPath, err)){
+                    error("%s : %s", __func__, err);
+                    return InitError(err);
+                }
+            }
+
+            // run task
+            if (!model->RunStageIPossible(err) || !model->RunStageI(err)) {
+                error("%s : %s", __func__, err);
+                return InitError(err);
+            }
+
+            // show progress of downloading file from the cloud
+            const std::string url = Params().GetBootstrapUrl();
+            if (model->GetBootstrapMode() == BootstrapMode::cloud) {
+                MilliSleep(1000); // wait until worker thread is started
+                while (model->IsBootstrapRunning()) {
+                    int percent = model->GetBootstrapProgress();
+                    fprintf(stderr, "Downloading %s %d%%...\r", url.c_str(), percent);
+                    MilliSleep(2000); // update each 2 seconds
+                }
+                fprintf(stderr, "\n");
+            }
+
+            // wait task to complete
+            if (!model->IsLatestRunSuccess(err)) {
+                error("%s : %s", __func__, err);
+                return InitError(err);
+            }
+
+            InitInformation("Stage I completed.");
+        } catch (const std::exception& e) {
+            error("%s : %s", __func__, e.what());
+            return InitError(e.what());
+        }
+    }
 
     // Check if we should run stage II of the blockchain bootstrap
     if (model->RunStageIIPrepared()) {
