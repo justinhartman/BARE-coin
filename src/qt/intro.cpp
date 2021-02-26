@@ -20,7 +20,6 @@
 
 /* Minimum free space (in bytes) needed for data directory */
 static const uint64_t GB_BYTES = 1000000000LL;
-static const uint64_t GetBlockChainSize() = 2LL * GB_BYTES;
 
 /* Check free space asynchronously to prevent hanging the UI thread.
 
