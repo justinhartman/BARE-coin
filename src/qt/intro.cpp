@@ -110,7 +110,7 @@ Intro::Intro(QWidget* parent) : QDialog(parent),
                                 signalled(false)
 {
     ui->setupUi(this);
-    ui->sizeWarningLabel->setText(ui->sizeWarningLabel->text().arg(BLOCK_CHAIN_SIZE / GB_BYTES));
+    ui->sizeWarningLabel->setText(ui->sizeWarningLabel->text().arg(GetBlockChainSize() / GB_BYTES));
     startThread();
 }
 

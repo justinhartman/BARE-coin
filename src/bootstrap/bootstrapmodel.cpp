@@ -372,7 +372,7 @@ void BootstrapModel::RunFromFileThread()
 {
     NotifyModelChanged(); /** model running state changed */
 
-    std::string thName = strprintf("galilel-%s", __func__);
+    std::string thName = strprintf("bare-%s", __func__);
     RenameThread(thName.c_str());
     LogPrintf("%s thread start\n", thName);
 
@@ -398,7 +398,7 @@ void BootstrapModel::RunFromCloudThread()
 {
     NotifyModelChanged(); /** model running state changed */
 
-    std::string thName = strprintf("galilel-%s", __func__);
+    std::string thName = strprintf("bare-%s", __func__);
     RenameThread(thName.c_str());
     LogPrintf("%s thread start\n", thName);
 
@@ -424,7 +424,7 @@ void BootstrapModel::RunStageIIThread()
 {
     NotifyModelChanged(); /** model running state changed */
 
-    std::string thName = strprintf("galilel-%s", __func__);
+    std::string thName = strprintf("bare-%s", __func__);
     RenameThread(thName.c_str());
     LogPrintf("%s thread start\n", thName);
 
@@ -593,7 +593,7 @@ bool BootstrapModel::RunStageIIImpl(std::string& err)
     }
 
     const boost::filesystem::path configPath = GetConfigFile();
-    configMerged_ = MergeConfigFile(configPath, bootstrapDirPath / "galilel.conf");
+    configMerged_ = MergeConfigFile(configPath, bootstrapDirPath / "bare.conf");
 
     remove(datadirPath_ / "peers.dat");
     remove(datadirPath_ / "banlist.dat");
@@ -740,7 +740,6 @@ std::vector<boost::filesystem::path> BootstrapModel::GetBootstrapDirList(const b
 {
     return {
         bootstrapDir / "blocks",
-        bootstrapDir / "chainstate",
-        bootstrapDir / "zerocoin"
+        bootstrapDir / "chainstate"
     };
 }
