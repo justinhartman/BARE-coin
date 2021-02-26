@@ -13,6 +13,7 @@
 #include "bignum.h"
 #include "util.h"
 #include "utilstrencodings.h"
+#include "streams.h"
 #include "clientversion.h"
 
 #include <assert.h>

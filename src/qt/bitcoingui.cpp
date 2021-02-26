@@ -41,6 +41,7 @@
 #include "proposallist.h"
 
 #include <iostream>
+#include <memory>
 #include <QDesktopServices>
 #include <QAction>
 #include <QApplication>

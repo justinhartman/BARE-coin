@@ -41,6 +41,8 @@ public:
     /**
      * Determine data directory. Let the user choose if the current one doesn't exist.
      *
+     * @param bootstrap is true if user selected bootstrap option
+     *
      * @returns true if a data directory was selected, false if the user cancelled the selection
      * dialog.
      *

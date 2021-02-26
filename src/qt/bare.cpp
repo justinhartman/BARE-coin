@@ -511,8 +511,8 @@ WId BitcoinApplication::getMainWinId() const
 {
     if (!window)
         return 0;
-
-    return window->winId();
+    else
+        return window->winId();
 }
 
 #ifndef BITCOIN_QT_TEST

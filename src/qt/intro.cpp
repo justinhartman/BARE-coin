@@ -7,6 +7,7 @@
 #include "intro.h"
 #include "ui_intro.h"
 
+#include "chainparams.h"
 #include "guiutil.h"
 
 #include "util.h"
@@ -19,7 +20,7 @@
 
 /* Minimum free space (in bytes) needed for data directory */
 static const uint64_t GB_BYTES = 1000000000LL;
-static const uint64_t BLOCK_CHAIN_SIZE = 2LL * GB_BYTES;
+static const uint64_t GetBlockChainSize() = 2LL * GB_BYTES;
 
 /* Check free space asynchronously to prevent hanging the UI thread.
 
@@ -209,8 +210,8 @@ void Intro::setStatus(int status, const QString& message, quint64 bytesAvailable
         ui->freeSpace->setText("");
     } else {
         QString freeString = tr("%1 GB of free space available").arg(bytesAvailable / GB_BYTES);
-        if (bytesAvailable < BLOCK_CHAIN_SIZE) {
-            freeString += " " + tr("(of %1 GB needed)").arg(BLOCK_CHAIN_SIZE / GB_BYTES);
+        if (bytesAvailable < GetBlockChainSize()) {
+            freeString += " " + tr("(of %1 GB needed)").arg(GetBlockChainSize() / GB_BYTES);
             ui->freeSpace->setStyleSheet("QLabel { color: #800000 }");
         } else {
             ui->freeSpace->setStyleSheet("");
