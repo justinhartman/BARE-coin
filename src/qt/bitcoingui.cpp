@@ -389,11 +389,11 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     aboutAction->setMenuRole(QAction::AboutRole);
     showWebsiteAction = new QAction(QIcon(":/icons/browse"), tr("&BARE Website"), this);
     showExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("&BARE Explorer"), this);
-	showCrexAction = new QAction(QIcon(":/icons/crex"), tr("&Crex 24 Market BARE/BTC"), this);
-	showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("&CoinGecko BARE"), this);
-	showBareplatformAction = new QAction(QIcon(":/icons/browse"), tr("&BARE Platform beta"), this);
-	showMnCommunityAction = new QAction(QIcon(":/icons/mnc"), tr("&Rapids.host"), this);
-
+    showCrexAction = new QAction(QIcon(":/icons/crex"), tr("&Crex 24 Market BARE/BTC"), this);
+    showCoingeckoAction = new QAction(QIcon(":/icons/gecko"), tr("&CoinGecko BARE"), this);
+    showBareplatformAction = new QAction(QIcon(":/icons/browse"), tr("&BARE Platform beta"), this);
+    showRapidshostAction = new QAction(QIcon(":/icons/rapids"), tr("&Rapids.host"), this);
+	
 #if QT_VERSION < 0x050000
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
 #else
@@ -478,8 +478,8 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     connect(showExplorerAction, SIGNAL(triggered()), this, SLOT(ExplorerClicked()));
     connect(showCrexAction, SIGNAL(triggered()), this, SLOT(CrexClicked()));
     connect(showCoingeckoAction, SIGNAL(triggered()), this, SLOT(CoingeckoClicked()));
-	connect(showBareplatformAction, SIGNAL(triggered()), this, SLOT(BareplatformClicked()));
-    connect(showMnCommunityAction, SIGNAL(triggered()), this, SLOT(MnCommunityClicked()));
+    connect(showBareplatformAction, SIGNAL(triggered()), this, SLOT(BareplatformClicked()));
+    connect(showRapidshostAction, SIGNAL(triggered()), this, SLOT(RapidshostClicked()));
  
 #ifdef ENABLE_WALLET
     if (walletFrame) {
@@ -557,14 +557,14 @@ void BitcoinGUI::createMenuBar()
         tools->addAction(openBlockExplorerAction);
     }
 
-	QMenu* bare = appMenuBar->addMenu(tr("&Bare Network"));
-	bare->addAction(showWebsiteAction);
-	bare->addAction(showExplorerAction);
-	bare->addAction(showBareplatformAction);
-	bare->addSeparator();
-	bare->addAction(showCrexAction);
-	bare->addAction(showCoingeckoAction);
-	bare->addAction(showMnCommunityAction);
+    QMenu* bare = appMenuBar->addMenu(tr("&Bare Network"));
+    bare->addAction(showWebsiteAction);
+    bare->addAction(showExplorerAction);
+    bare->addAction(showBareplatformAction);
+    bare->addSeparator();
+    bare->addAction(showCrexAction);
+    bare->addAction(showCoingeckoAction);
+    bare->addAction(showRapidshostAction);
 
     QMenu* help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(showHelpMessageAction);
@@ -827,9 +827,9 @@ void BitcoinGUI::BareplatformClicked()
     QDesktopServices::openUrl(QUrl(link));
 }
 
-void BitcoinGUI::MnCommunityClicked()
+void BitcoinGUI::RapidshostClicked()
 {
-    QString link = "https://masternode.community";
+    QString link = "https://rapids.host";
     QDesktopServices::openUrl(QUrl(link));
 }
 
@@ -1365,13 +1365,13 @@ static bool ThreadSafeMessageBox(BitcoinGUI* gui, const std::string& message, co
 void BitcoinGUI::subscribeToCoreSignals()
 {
     // Connect signals to client
-    uiInterface.ThreadSafeMessageBox.connect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));
+    uiInterface.ThreadSafeMessageBox.connect(boost::bind(ThreadSafeMessageBox, this, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3));
 }
 
 void BitcoinGUI::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
-    uiInterface.ThreadSafeMessageBox.disconnect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));
+    uiInterface.ThreadSafeMessageBox.disconnect(boost::bind(ThreadSafeMessageBox, this, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3));
 }
 
 /** Get restart command-line parameters and request restart */
