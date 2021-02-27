@@ -210,9 +210,6 @@ libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
-  bootstrap/bootstrapmodel.cpp \
-  bootstrap/curl.cpp \
-  bootstrap/ziputil.cpp \
   addrman.cpp \
   alert.cpp \
   bloom.cpp \
@@ -359,6 +356,9 @@ libbitcoin_common_a_SOURCES = \
 libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_util_a_SOURCES = \
+  bootstrap/bootstrapmodel.cpp \
+  bootstrap/curl.cpp \
+  bootstrap/ziputil.cpp \
   allocators.cpp \
   compat/strnlen.cpp \
   compat/glibc_sanity.cpp \
