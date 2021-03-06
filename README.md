@@ -1,3 +1,6 @@
+BARE v2 "Cyrill"
+BARE Coin integration/staging repository
+=====================================
 ![GitHub Logo](/share/pixmaps/bitcoin16.png) 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/BareCrypto/BARE-coin?label=latest%20version) 
 ![Release date](https://img.shields.io/github/release-date/BareCrypto/BARE-coin) 
@@ -6,10 +9,6 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/bare_crypto?style=flat)](https://twitter.com/bare_crypto)
 -------------------------------------------------------------------------------------------------------------------------------
 *** BETA SOFTWARE - USE AT YOUR OWN RISK ***
-
-BARE v2 "Cyrill"
-BARE Coin integration/staging repository
-=====================================
 
 BARE is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - 100% Proof of Stake 3.0 Consensus protocol, allowing very low transaction fees and energy expenditure, and staking rewards to all participants in the network
