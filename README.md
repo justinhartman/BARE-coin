@@ -1,6 +1,5 @@
 BARE v2 "Cyrill"
 BARE Coin integration/staging repository
-=====================================
 ![GitHub Logo](/share/pixmaps/bitcoin16.png) 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/BareCrypto/BARE-coin?label=latest%20version) 
 ![Release date](https://img.shields.io/github/release-date/BareCrypto/BARE-coin) 
