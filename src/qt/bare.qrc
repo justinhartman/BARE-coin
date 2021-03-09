@@ -59,7 +59,6 @@
         <file alias="staking_inactive">res/icons/staking_inactive.png</file>
         <file alias="gecko">res/icons/gecko.png</file>
         <file alias="crex">res/icons/crex.png</file>
-        <file alias="weblink">res/icons/weblink.png</file>
         <file alias="explorer">res/icons/explorer.png</file>
 		<file alias="rapids">res/icons/rapids.png</file>
     </qresource>
