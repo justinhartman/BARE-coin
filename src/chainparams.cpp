@@ -216,7 +216,7 @@ public:
         strObfuscationPoolDummyAddress = "BPTA3JSwXuzHWs56xU7v1ezAWoBFeYXmKV";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
 		
-		strBootstrapUrl = "https://bare.network/v2/mainnet"; // location of bare bootstrap file
+		strBootstrapUrl = "https://bootstrap.bare.network/v2/mainnet"; // location of bare bootstrap file
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -325,7 +325,7 @@ public:
         nBudgetFeeConfirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                      // here because we only have a 8 block finalization window on testnet
 		
-		strBootstrapUrl = "https://bare.network/v2/testnet"; // location of bare bootstrap file
+		strBootstrapUrl = "https://bootstrap.bare.network/v2/testnet"; // location of bare bootstrap file
 		
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
