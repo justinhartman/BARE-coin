@@ -100,6 +100,9 @@ public:
     int ModifierUpgradeBlock() const { return nModifierUpdateBlock; }
     int LAST_POW_BLOCK() const { return nLastPOWBlock; }
 
+	/** BARE only **/
+	std::string GetBootstrapUrl() const { return strBootstrapUrl; };
+	
 protected:
     CChainParams() {}
 
@@ -142,6 +145,9 @@ protected:
     std::string strSporkKeyTemp;
     std::string strObfuscationPoolDummyAddress;
     int64_t nBudgetFeeConfirmations;
+	
+	/** BARE only **/
+	std::string strBootstrapUrl;
 };
 
 /**
@@ -169,6 +175,9 @@ public:
  */
 const CChainParams& Params();
 
+/** Return whether network params are selected or not. */
+bool ParamsSelected();
+
 /** Return parameters for the given network. */
 CChainParams& Params(CBaseChainParams::Network network);
 
@@ -183,5 +192,22 @@ void SelectParams(CBaseChainParams::Network network);
  * Returns false if an invalid combination is given.
  */
 bool SelectParamsFromCommandLine();
+
+/**
+ * Return approximate blockchain size on disk, in Gb.
+ * Minimum free space (in bytes) needed for data directory.
+ */
+uint64_t GetBlockChainSize();
+
+/**
+ * @brief Check if genesis block in the given datadir has correct hash.
+ *        Compare first block from blk0000.dat in the given datadir against genesisHash.
+ *
+ * @param datadir full path to the data directory
+ * @param genesisHash hash of the genesis block
+ * @param err description of the problem
+ * @return true - ok, false - failed
+ */
+bool VerifyGenesisBlock(const std::string& datadir, const uint256& genesisHash, std::string& err);
 
 #endif // BITCOIN_CHAINPARAMS_H

@@ -463,6 +463,12 @@ bool ParseFixedPoint(const std::string &val, int decimals, int64_t *amount_out)
     return true;
 }
 
+bool DefinedArg(const std::string& strArg)
+{   
+    assert(!strArg.empty());
+    return mapArgs.find(strArg) != mapArgs.end();
+}
+
 std::string GetArg(const std::string& strArg, const std::string& strDefault)
 {
     if (mapArgs.count(strArg))

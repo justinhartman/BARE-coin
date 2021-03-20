@@ -6,6 +6,7 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+#include "context.h"
 #include "clientversion.h"
 #include "init.h"
 #include "main.h"
@@ -163,6 +164,8 @@ bool AppInit(int argc, char* argv[])
 
 int main(int argc, char* argv[])
 {
+	ContextScopeInit context;
+
     SetupEnvironment();
 
     // Connect bared signal handlers

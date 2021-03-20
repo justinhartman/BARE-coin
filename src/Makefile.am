@@ -2,7 +2,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-DIST_SUBDIRS = secp256k1 univalue
+DIST_SUBDIRS = secp256k1 univalue minizip
 
 AM_LDFLAGS = $(PTHREAD_CFLAGS) $(LIBTOOL_LDFLAGS) $(HARDENED_LDFLAGS)
 AM_CXXFLAGS = $(HARDENED_CXXFLAGS) $(ERROR_CXXFLAGS)
@@ -33,10 +33,15 @@ $(LIBLEVELDB) $(LIBMEMENV):
           OPT="$(AM_CXXFLAGS) $(PIE_FLAGS) $(CXXFLAGS) $(AM_CPPFLAGS) $(CPPFLAGS) -D__STDC_LIMIT_MACROS"
 endif
 
+LIBMINIZIP = minizip/libminizip.la
+$(LIBMINIZIP):
+	@echo "Building minizip ..." && $(MAKE) -C $(@D) $(@F) CXX="$(CXX)" CC="$(CC)" PLATFORM=$(TARGET_OS) AR="$(AR)" OPT="$(AM_CXXFLAGS) $(PIE_FLAGS) $(CXXFLAGS) $(AM_CPPFLAGS) $(CPPFLAGS)"
+
 BITCOIN_CONFIG_INCLUDES=-I$(builddir)/config
 BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
 BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
+BITCOIN_INCLUDES += -I$(srcdir)/minizip
 BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
 LIBBITCOIN_SERVER=libbitcoin_server.a
@@ -88,6 +93,10 @@ endif
 .PHONY: FORCE
 # BARE Coin #
 BITCOIN_CORE_H = \
+  bootstrap/bootstrapmodel.h \
+  bootstrap/curl.h \
+  bootstrap/finally.h \
+  bootstrap/ziputil.h \
   activemasternode.h \
   addrman.h \
   alert.h \
@@ -112,6 +121,7 @@ BITCOIN_CORE_H = \
   consensus/merkle.h \
   consensus/validation.h \
   compressor.h \
+  context.h \
   primitives/block.h \
   primitives/transaction.h \
   core_io.h \
@@ -346,10 +356,14 @@ libbitcoin_common_a_SOURCES = \
 libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_util_a_SOURCES = \
+  bootstrap/bootstrapmodel.cpp \
+  bootstrap/curl.cpp \
+  bootstrap/ziputil.cpp \
   allocators.cpp \
   compat/strnlen.cpp \
   compat/glibc_sanity.cpp \
   compat/glibcxx_sanity.cpp \
+  context.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
   random.cpp \
@@ -395,9 +409,10 @@ bared_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
-  $(LIBSECP256K1)
+  $(LIBSECP256K1) \
+  $(LIBMINIZIP)
 
-bared_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+bared_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(CURL_LIBS)
 
 # bare-cli binary #
 bare_cli_SOURCES = bare-cli.cpp
@@ -415,7 +430,7 @@ bare_cli_LDADD = \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-bare_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+bare_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(CURL_LIBS)
 #
 
 # bare-tx binary #
@@ -435,7 +450,7 @@ bare_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-bare_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+bare_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(CURL_LIBS)
 #
 
 # bitcoinconsensus library #

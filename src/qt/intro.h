@@ -34,7 +34,14 @@ public:
     void setDataDirectory(const QString& dataDir);
 
     /**
+     * Returns true if user selected bootstrap option.
+     */
+    bool getBootstrapOption() const;
+
+    /**
      * Determine data directory. Let the user choose if the current one doesn't exist.
+     *
+     * @param bootstrap is true if user selected bootstrap option
      *
      * @returns true if a data directory was selected, false if the user cancelled the selection
      * dialog.
@@ -42,7 +49,7 @@ public:
      * @note do NOT call global GetDataDir() before calling this function, this
      * will cause the wrong path to be cached.
      */
-    static bool pickDataDirectory();
+    static bool pickDataDirectory(bool& bootstrap);
 
     /**
      * Determine default data directory for operating system.

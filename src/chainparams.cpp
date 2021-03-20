@@ -13,6 +13,8 @@
 #include "bignum.h"
 #include "util.h"
 #include "utilstrencodings.h"
+#include "streams.h"
+#include "clientversion.h"
 
 #include <assert.h>
 
@@ -213,6 +215,8 @@ public:
         strSporkKeyTemp = "048a6bf259eac7886037b9daad4d43856eeab0c1408671436f1f24a067d8dadf79ef721f0eb053b5444e01932387e2c6c03466bf0dbbdeba84302434fd3e28b077";
         strObfuscationPoolDummyAddress = "BPTA3JSwXuzHWs56xU7v1ezAWoBFeYXmKV";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
+		
+		strBootstrapUrl = "https://bootstrap.bare.network/v2/mainnet"; // location of bare bootstrap file
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -320,6 +324,9 @@ public:
         strObfuscationPoolDummyAddress = "7vRzZ63yCrXCf8C8sXnCuLbLf4L2kemrLkmF4MJp22JVG93VHdi";
         nBudgetFeeConfirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                      // here because we only have a 8 block finalization window on testnet
+		
+		strBootstrapUrl = "https://bootstrap.bare.network/v2/testnet"; // location of bare bootstrap file
+		
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
@@ -463,6 +470,11 @@ CModifiableParams* ModifiableParams()
     return (CModifiableParams*)&unitTestParams;
 }
 
+bool ParamsSelected()
+{
+    return pCurrentParams != nullptr;
+}
+
 const CChainParams& Params()
 {
     assert(pCurrentParams);
@@ -500,4 +512,58 @@ bool SelectParamsFromCommandLine()
 
     SelectParams(network);
     return true;
+}
+
+uint64_t GetBlockChainSize()
+{
+    const uint64_t GB_BYTES = 1000000000LL;
+    return 1LL * GB_BYTES;
+}
+
+bool VerifyGenesisBlock(const std::string& datadir, const uint256& genesisHash, std::string& err)
+{
+    const std::string path = strprintf("%s/blocks/blk00000.dat", datadir);
+    FILE *fptr = fopen(path.c_str(), "rb");
+    if (!fptr) {
+        err = strprintf("Failed to open file: %s", path);
+        return false;
+    }
+
+    CAutoFile filein(fptr, SER_DISK, CLIENT_VERSION);
+    if (filein.IsNull()) {
+        err = strprintf("Open block file failed: %s", path);
+        return false;
+    }
+
+    char buf[MESSAGE_START_SIZE] = {0};
+    filein.read(buf, MESSAGE_START_SIZE);
+    if (memcmp(buf, Params().MessageStart(), MESSAGE_START_SIZE)) {
+        err = strprintf("Invalid magic numer %s in the file: %s", HexStr(buf, buf + MESSAGE_START_SIZE), path);
+        return false;
+    }
+
+    unsigned int nSize = 0;
+    filein >> nSize;
+    if (nSize < 80 || nSize > 2000000) {
+        err = strprintf("Invalid block size %u in the file: %s", nSize, path);
+        return false;
+    }
+
+    CBlock block;
+    try {
+
+        /** Read block */
+        filein >> block;
+    } catch (std::exception& e) {
+        err = strprintf("Deserialize or I/O error: %s", e.what());
+        return false;
+    }
+
+    /** Check block hash */
+    if (block.GetHash() != genesisHash) {
+        err = strprintf("Block hash %s does not match genesis block hash %s", block.GetHash().ToString(), genesisHash.ToString());
+        return false;
+    } else {
+        return true;
+    }
 }
