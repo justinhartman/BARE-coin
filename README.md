@@ -1,3 +1,4 @@
+
 # BARE v2 "Cyrill" BARE Coin integration/staging repository
 
 ![GitHub Logo](/share/pixmaps/bitcoin16.png) 
@@ -32,6 +33,7 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 ***Clients:***
 > [Client Binaries](https://github.com/BareCrypto/BARE-coin/releases/latest)<br>
 > [![GitHub Releases](https://img.shields.io/github/downloads/BareCrypto/BARE-coin/latest/total)](https://github.com/BareCrypto/BARE-coin/releases/latest) [![GitHub All Releases](https://img.shields.io/github/downloads/BareCrypto/BARE-coin/total?label=downloads%40all%20releases)](https://github.com/BareCrypto/BARE-coin/releases)<br>
+> [bootstrap](https://bootstrap.bare.network/v2/mainnet) Build in cli and qt from v2.0.2
 
 ***BARE Platform:***
 > [Bare platform](https://beta.bare.network) *beta*
@@ -46,8 +48,8 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 
 ***Markets:***
 > [Crex24(BTC)](https://crex24.com/exchange/BARE-BTC)<br>
-> [Altilly(BTC)](https://altilly.com/market/BARE_BTC)<br>
-> [Altilly(XQR)](https://altilly.com/market/BARE_XQR)
+> [Autradex(BTC)](https://wallet.autradex.systems/markets/anbtc)<br>
+> [BitSails(BTC)](https://www.bitsails.com/market?MarketName=BTC-BARE)
 
 ***Masternode/Pos Pools & Hostings:***
 > [rapid.host](http://rapids.host/) ex masternode.community<br>
@@ -55,17 +57,24 @@ BARE is a cutting edge cryptocurrency, with many features not available in most 
 > [Ihostmn](https://ihostmn.com)<br>
 > [Nodemasters](https://nodemasters.co.uk)<br>
 > [Pecunia platform](https://pecuniaplatform.io)<br>
-> [NodeZero platform](https://www.nodezeroplatform.com/) / [discord NZO](https://discord.gg/J38DYe7)<br>
 > [Harcomia](https://play.google.com/store/apps/details?id=net.harcomiawallet.android) / [discord HCA](https://discord.gg/bXd8APf)
 
 ***Monitors:***
 > [Coingecko](https://coingecko.com/en/coins/bare)<br>
 > [Coinpaprika](https://coinpaprika.com/coin/bare-bare)<br>
 > [Coincodex](https://coincodex.com/crypto/bare/)<br>
+> [NodeCheck](https://nodecheck.io/currency/BARE)<br>
 > [Dextro](https://dextro.io/page/coin/bare)<br>
+> [NodeStats](https://nodestats.info/default.php?coin=bare)<br>
 > [MNRoi](https://www.mnroi.info/coin/BARE)<br>
 > [MNRank](https://mnrank.com/coin/BARE)<br>
 > [Masternode Monitor](https://masternode-monitor.online/coin/BARE)
+
+***Marketing Groups:***
+> [CoinZone Discord](https://discord.gg/Nx32AA7)<br>
+> [Eastern Empire Discord](https://discord.gg/sbecdn9)<br>
+> [Crypto$ky Community](https://discord.gg/AtSfht5)<br>
+> [Crypto Paradise](https://discord.gg/a4fqWTs)<br>
 
 ## PoS Rewards Breakdown ##
 
@@ -100,7 +109,6 @@ or [Email](mailto:crypto-node@gmx.net)
 
 **Only transactions up to and including block 400000 will be processed.**
 **Do not send coins in V1 client or from v1 client to v2 client. This will cause lost your coins! **
-
 
 
 For support, please don't hesitate to join us in our chat platform
