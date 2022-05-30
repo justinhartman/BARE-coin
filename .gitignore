@@ -85,7 +85,8 @@ src/leveldb/build_config.mk
 *.qm
 Makefile
 bare-qt
-bare-Qt.app
+BARE-Qt.app
+background.tiff*
 
 # Unit-tests
 Makefile.test
