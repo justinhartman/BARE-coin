@@ -5,7 +5,7 @@ define(_CLIENT_VERSION_MINOR, 0)
 define(_CLIENT_VERSION_REVISION, 2)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
-define(_COPYRIGHT_YEAR, 2021)
+define(_COPYRIGHT_YEAR, 2022)
 AC_INIT([BARE Coin],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.bare.network],[bare-coin])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/bare-config.h])
@@ -341,8 +341,8 @@ case $host in
          dnl It's safe to add these paths even if the functionality is disabled by
          dnl the user (--without-wallet or --without-gui for example).
 
-         openssl_prefix=`$BREW --prefix openssl 2>/dev/null`
-         bdb_prefix=`$BREW --prefix berkeley-db4 2>/dev/null`
+         openssl_prefix=`$BREW --prefix openssl@1.0 2>/dev/null`
+         bdb_prefix=`$BREW --prefix berkeley-db@4 2>/dev/null`
          qt5_prefix=`$BREW --prefix qt5 2>/dev/null`
          if test x$openssl_prefix != x; then
            PKG_CONFIG_PATH="$openssl_prefix/lib/pkgconfig:$PKG_CONFIG_PATH"
